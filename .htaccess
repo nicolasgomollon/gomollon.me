@@ -1,0 +1,119 @@
+# Prevent directory listings
+Options -Indexes
+
+# Follow symbolic links
+Options +FollowSymLinks
+
+# Add additional MIME Types
+AddType application/vnd.apple.pkpass .pkpass
+AddType application/octet-stream .safariextz .ipa
+AddType text/cache-manifest .manifest
+AddType text/x-component .htc
+
+# Automatically add utf-8 charset to files
+<FilesMatch "\.(htm|html|php|asp|css|js)$">
+AddDefaultCharset UTF-8
+</FilesMatch>
+
+#
+# Reduce page size by compressing static data and save bandwidth
+#
+# ----------------------------------------------------------------------
+# Gzip compression
+# ----------------------------------------------------------------------
+#
+<IfModule mod_deflate.c>
+	# Force deflate for mangled headers developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/
+	<IfModule mod_setenvif.c>
+		<IfModule mod_headers.c>
+			SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+			RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+		</IfModule>
+	</IfModule>
+	
+	# Compress all output labeled with one of the following MIME-types
+	<IfModule mod_filter.c>
+		AddOutputFilterByType DEFLATE application/atom+xml application/javascript application/json application/rss+xml application/vnd.ms-fontobject application/x-font-ttf application/xhtml+xml application/xml font/opentype image/svg+xml image/x-icon text/css text/html text/plain text/x-component text/xml
+	</IfModule>
+</IfModule>
+
+################################################################
+
+# rewrite rules
+<IfModule mod_rewrite.c>
+
+# Enable rewrite rules
+RewriteEngine on
+RewriteBase /
+
+
+
+###
+## Standard Redirections
+###
+
+# Drop www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=301,L]
+
+###
+## Standard Redirections
+###
+
+
+
+###
+## Family Redirections
+###
+
+# Nicolas Gomollon
+RewriteCond %{HTTP_HOST} ^n\.(.*)$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^nico\.(.*)$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^nicolas\.(.*)$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^niko\.(.*)$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^nikko\.(.*)$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^nick\.(.*)$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^nicholas.(.*)$ [NC]
+RewriteRule ^(.*)$ https://techno-magic.com/ [R=301,L]
+
+# Tomas Gomollon
+RewriteCond %{HTTP_HOST} ^t\.(.*)$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^tomas\.(.*)$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^tommy\.(.*)$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^tomy\.(.*)$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^tommi\.(.*)$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^tomi\.(.*)$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^toams\.(.*)$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^thomas\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://www.facebook.com/tgomollon [R=301,L]
+
+# Carlos Gomollon
+RewriteCond %{HTTP_HOST} ^car\.(.*)$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^carlos\.(.*)$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^carolos\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://www.facebook.com/carlos.gomollon [R=301,L]
+
+###
+## Family Redirections
+###
+
+
+
+# Check for a PHP file.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} .*/([^.]+)$
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ $1.php
+
+# Check for an HTML file.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} .*/([^.]+)$
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*?)/?$ $1.html
+
+# active redirections
+#Redirect 301 /source /destination
+
+</IfModule>
