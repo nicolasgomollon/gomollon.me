@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+* {
+	-webkit-text-size-adjust: none;
+}
+
+header h1 {
+	font-size: 50pt;
+}
+
+.no-mobile {
+	display: none !important;
+}

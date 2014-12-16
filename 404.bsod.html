@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>ERROR 404</title>
+	<meta name="robots" content="noindex, nofollow" />
+	<style>
+		body {
+			background: #0000aa;
+			color: #ffffff;
+			font-family: courier;
+			font-size: 12pt;
+			text-align: center;
+			margin: 100px;
+		}
+		
+		.title {
+			background: #fff;
+			color: #0000aa;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+		
+		p {
+			margin: 30px 100px;
+			text-align: left;
+		}
+		
+		a,a:hover {
+			color: inherit;
+			font: inherit;
+		}
+		
+		.menu {
+			text-align: center;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<span class="title">ERROR 404</span>
+	<p>The page you were looking for is missing or was never written. You can wait and see if it becomes available again, or you can restart your computer.</p>
+	<p>
+	* Send us an e-mail to notify us, and come back to this page later.<br /><br />
+	* Press CTRL+ALT+DEL to restart your computer. You will lose any unsaved information in all applications.
+	</p>
+	Press any link to continue <blink>_</blink>
+	<div class="menu"><a href="/">home</a> | <a href="/support">support</a></div>
+	<script type="text/javascript">
+		setInterval("blink()", 750);
+		function blink() {
+			if (document.getElementsByTagName("blink")[0].innerHTML == '_') {
+				document.getElementsByTagName("blink")[0].innerHTML = '&nbsp;';
+			} else {
+				document.getElementsByTagName("blink")[0].innerHTML = '_';
+			}
+		}
+	</script>
+</body>
+</html>
