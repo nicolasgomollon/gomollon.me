@@ -58,6 +58,10 @@ RewriteRule ^(.*)$ - [env=scheme:https]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ - [env=scheme:http]
 
+# Redirect `gmln.me` to `gomollon.me`
+RewriteCond %{HTTP_HOST} ^(.*)gmln\.me$ [NC]
+RewriteRule ^(.*)$ %{ENV:scheme}://%1gomollon.me%{REQUEST_URI} [R=301,L]
+
 # Drop www
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ %{ENV:scheme}://%1%{REQUEST_URI} [R=301,L]
