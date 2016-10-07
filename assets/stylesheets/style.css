@@ -105,7 +105,7 @@ i {
 	font-style: italic;
 }
 
-p {
+p, li {
 	margin: 0 0 1em;
 }
 
@@ -179,4 +179,51 @@ p {
 
 .highlight.red {
 	background-color: #ffcaca;
+}
+
+app {
+	margin-bottom: 20pt;
+	min-height: 128px;
+}
+
+app:last-of-type {
+	margin: 0;
+}
+
+app a {
+	color: #444;
+/* 	border-bottom: 1pt solid; */
+}
+
+app>info>name, .title {
+	font-weight: bold;
+	font-size: 15pt;
+	color: #444;
+}
+
+app>info>name {
+	position: relative;
+	margin-bottom: 0.25em;
+}
+
+app img.app-icon {
+	margin-right: 1.25em;
+	margin-bottom: 1em;
+	float: left;
+}
+
+img.app-icon {
+	-webkit-box-shadow: 0pt 1pt 4pt rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0pt 1pt 4pt rgba(0, 0, 0, 0.25);
+	-ms-box-shadow: 0pt 1pt 4pt rgba(0, 0, 0, 0.25);
+	-o-box-shadow: 0pt 1pt 4pt rgba(0, 0, 0, 0.25);
+	box-shadow: 0pt 1pt 4pt rgba(0, 0, 0, 0.25);
+	
+	-webkit-border-radius: 21pt;
+	-moz-border-radius: 21pt;
+	-ms-border-radius: 21pt;
+	-o-border-radius: 21pt;
+	border-radius: 21pt;
+	
+	width: 128px; height: 128px;
 }
