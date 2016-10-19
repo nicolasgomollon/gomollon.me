@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+* {
+	-webkit-text-size-adjust: none;
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, hr, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, app, info, name, dialog, embed, figure, figcaption, social, footer, header, hgroup, menu, nav, output, ruby, section, person, content, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -50,7 +54,7 @@ footer div, footer p {
 body {
 	background: #ffffff;
 	color: #000000;
-	font-family: -apple-system, -apple-system-font, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: system, -apple-system, -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-weight: 300;
 	font-size: 12pt;
 	line-height: 1.5em;
@@ -192,7 +196,6 @@ app:last-of-type {
 
 app a {
 	color: #444;
-/* 	border-bottom: 1pt solid; */
 }
 
 app>info>name, .title {
@@ -226,4 +229,77 @@ img.app-icon {
 	border-radius: 21pt;
 	
 	width: 128px; height: 128px;
+}
+
+div.website {
+	margin-bottom: 30pt;
+}
+
+div.website:last-of-type {
+	margin: 0;
+}
+
+div.website p {
+	max-width: 550px;
+	margin: 0 auto;
+}
+
+div.website p span.date {
+	display: inline-block;
+	padding-left: 1em;
+	float: right;
+	text-align: right;
+	font-variant: small-caps;
+}
+
+div.website a.preview, div.website a:hover.preview {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	max-width: 600px;
+	
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	
+	background-color: #dedee3;
+	border: 1pt solid #bbb9bb;
+	color: #000000;
+	
+	-webkit-box-shadow: 0pt 1pt 4pt rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0pt 1pt 4pt rgba(0, 0, 0, 0.25);
+	-ms-box-shadow: 0pt 1pt 4pt rgba(0, 0, 0, 0.25);
+	-o-box-shadow: 0pt 1pt 4pt rgba(0, 0, 0, 0.25);
+	box-shadow: 0pt 1pt 4pt rgba(0, 0, 0, 0.25);
+	
+	-webkit-border-radius: 5pt;
+	-moz-border-radius: 5pt;
+	-ms-border-radius: 5pt;
+	-o-border-radius: 5pt;
+	border-radius: 5pt;
+}
+
+div.website a.preview .location {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 11pt;
+	
+	margin: 6pt 20pt;
+	padding: 0 20pt;
+	
+	background-color: #f8f8f8;
+	border: 1pt solid #d1cfd1;
+	border-bottom-color: #c2c0c2;
+	
+	-webkit-border-radius: 5pt;
+	-moz-border-radius: 5pt;
+	-ms-border-radius: 5pt;
+	-o-border-radius: 5pt;
+	border-radius: 5pt;
+}
+
+div.website a.preview img {
+	display: inline-block;
+	width: 100%; height: auto;
+	border-top: 1pt solid #bbb9bb;
 }

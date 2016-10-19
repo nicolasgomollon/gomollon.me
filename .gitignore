@@ -1,1 +1,6 @@
+# Ignore
 .DS_Store
+dl/*
+
+# Allow
+!dl/index.*
