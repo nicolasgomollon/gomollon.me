@@ -50,7 +50,16 @@ body {
 	
 	body {
 		margin: 0.75in auto;
+		padding: 0 20pt;
 		max-width: 6.5in;
+	}
+	
+}
+
+@media only screen and (max-width: 550px) {
+	
+	article {
+		margin-left: 10pt !important;
 	}
 	
 }
@@ -62,13 +71,23 @@ header, section, footer {
 header {
 	text-align: center;
 	line-height: 1.5em;
+	padding-bottom: 4pt;
 	border-bottom: 2pt solid #aba49d;
 }
 
-header div {
+header ul {
 	display: inline-block;
-	padding: 5pt;
+	list-style: none;
+}
+
+header ul li {
+	display: inline-block;
+	padding: 0 5pt;
 	padding-top: 0;
+}
+
+header ul li:before {
+	content: none;
 }
 
 section {
