@@ -118,11 +118,11 @@ p, li {
 	padding: 0 0.1em;
 	background-color: #d1d9e5;
 	border: 1pt solid #c5cdd9;
-    -webkit-border-radius: 3pt;
-    -moz-border-radius: 3pt;
-    -ms-border-radius: 3pt;
-    -o-border-radius: 3pt;
-    border-radius: 3pt;
+	-webkit-border-radius: 3pt;
+	-moz-border-radius: 3pt;
+	-ms-border-radius: 3pt;
+	-o-border-radius: 3pt;
+	border-radius: 3pt;
 }
 
 .inline {

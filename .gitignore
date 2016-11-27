@@ -1,6 +1,6 @@
-# Ignore
 .DS_Store
 dl/*
-
-# Allow
 !dl/index.*
+nicolas/school/*
+!nicolas/school/.htaccess
+!nicolas/school/index.*

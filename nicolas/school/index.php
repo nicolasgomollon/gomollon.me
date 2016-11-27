@@ -1,6 +1,6 @@
 <?php
-	$subdomain = "dl";
-	$directory = "/var/www/html" . DIRECTORY_SEPARATOR . $subdomain;
+	$subdomain = "school";
+	$directory = "/var/www/html/nicolas" . DIRECTORY_SEPARATOR . $subdomain;
 	
 	$hide = array(
 		'..',
@@ -12,6 +12,14 @@
 		'404.html',
 		'500.html',
 		'index.php',
+		'hacker',
+	);
+	
+	$dont_traverse = array();
+	
+	$traverse_children = array(
+		'digital-arts',
+		'writing',
 	);
 	
 	function scandirectory($dir, $files=true) {
@@ -33,7 +41,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Gomollon Family &rsaquo; DL &rsaquo; Index</title>
+	<title>Nicolas Gomollon &rsaquo; School &rsaquo; Index</title>
 	<meta name="robots" content="noindex, nofollow" />
 	<meta name="theme-color" content="#1e88ea">
 	<link rel="mask-icon" href="//gomollon.me/favicon.svg" color="#1e88ea">
@@ -354,21 +362,63 @@
 		<h1>Index of &ldquo;<?php echo $subdomain; ?>&rdquo;</h1>
 	</header>
 	<section>
+<?php
+	$contents = scandirectory($directory);
+	foreach ($contents as $item) {
+		$subdirectory = $directory . DIRECTORY_SEPARATOR . $item;
+		if (is_dir($subdirectory)) {
+			$subcontents = scandirectory($subdirectory);
+			if ((count($subcontents) > 0) && !in_array($item, $dont_traverse)) { ?>
 		<article>
 			<div class="buttons">
 				<div class="close"></div>
 				<div class="minimize"></div>
 				<div class="maximize"></div>
 			</div>
-			<div class="title">Files</div>
+			<div class="title"><?php echo $item; ?></div>
 			<div class="items">
-<?php
-	$contents = scandirectory($directory);
-	foreach ($contents as $item) { ?>
-				<a href="<?php echo $item; ?>"><?php echo $item; ?></a>
-<?php } ?>
+<?php			foreach ($subcontents as $subitem) {
+					if (in_array($item, $traverse_children)) {
+						$subsubdirectory = $subdirectory . DIRECTORY_SEPARATOR . $subitem;
+						if (is_dir($subsubdirectory)) {
+							$subsubcontents = scandirectory($subsubdirectory);
+							if (count($subsubcontents) > 0) {
+								foreach ($subsubcontents as $subsubitem) {
+									if (in_array($subitem, $traverse_children)) {
+										$subsubsubdirectory = $subsubdirectory . DIRECTORY_SEPARATOR . $subsubitem;
+										if (is_dir($subsubsubdirectory)) {
+											$subsubsubcontents = scandirectory($subsubsubdirectory);
+											if (count($subsubsubcontents) > 0) {
+												foreach ($subsubsubcontents as $subsubsubitem) {
+													$sublink = $item . DIRECTORY_SEPARATOR . $subitem . DIRECTORY_SEPARATOR . $subsubitem . DIRECTORY_SEPARATOR . $subsubsubitem; ?>
+				<a href="<?php echo $sublink; ?>"><?php echo $subitem . ": " . $subsubitem . ": " . $subsubsubitem; ?></a>
+<?php											}
+											} else { goto defaultsubsubitem; }
+										} else { goto defaultsubsubitem; }
+									} else {
+defaultsubsubitem:
+									$sublink = $item . DIRECTORY_SEPARATOR . $subitem . DIRECTORY_SEPARATOR . $subsubitem; ?>
+				<a href="<?php echo $sublink; ?>"><?php echo $subitem . ": " . $subsubitem; ?></a>
+<?php								}
+								}
+							} else { goto defaultsubitem; }
+						} else { goto defaultsubitem; }
+					} else {
+defaultsubitem:
+						$sublink = $item . DIRECTORY_SEPARATOR . $subitem; ?>
+				<a href="<?php echo $sublink; ?>"><?php echo $subitem; ?></a>
+<?php				}
+				} ?>
 			</div>
 		</article>
+<?php		} else { goto defaultitem; }
+		} else {
+defaultitem: ?>
+		<article>
+			<a class="title" href="<?php echo $item; ?>"><?php echo $item; ?></a>
+		</article>
+<?php	}
+	} ?>
 	</section>
 </body>
 </html>
