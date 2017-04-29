@@ -19,6 +19,7 @@
 	
 	$traverse_children = array(
 		'digital-arts',
+		'in4matx',
 		'writing',
 	);
 	
