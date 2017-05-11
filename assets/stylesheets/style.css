@@ -235,6 +235,69 @@ img.app-icon {
 	width: 128px; height: 128px;
 }
 
+div.repos {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+div.repo {
+	padding: 9pt 12pt;
+	border: 1pt solid #c5cdd9;
+	-webkit-border-radius: 3pt;
+	-moz-border-radius: 3pt;
+	-ms-border-radius: 3pt;
+	-o-border-radius: 3pt;
+	border-radius: 3pt;
+}
+
+div.repo>div {
+	font-size: 12pt;
+	line-height: 1.5em;
+}
+
+div.repo>div.skills,
+div.repo>div.description {
+	font-size: 10pt;
+}
+
+@media (max-width: 500pt) {
+	
+	div.repo {
+		margin: 0.5em 0;
+	}
+	
+	div.repo:first-of-type {
+		margin-top: 0;
+	}
+	
+	div.repo:last-of-type {
+		margin-bottom: 0;
+	}
+	
+}
+
+@media (min-width: 500pt) {
+	
+	div.repo {
+		width: calc(50% - (12pt + 3pt) * 2 + 2px);
+		margin: 3pt;
+	}
+	
+	div.repo:nth-of-type(-n+2) {
+		margin-top: 0;
+	}
+	
+	div.repo:nth-of-type(odd) {
+		margin-left: 0;
+	}
+	
+	div.repo:nth-of-type(even) {
+		margin-right: 0;
+	}
+	
+}
+
 div.website {
 	margin-bottom: 30pt;
 }
