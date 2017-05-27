@@ -60,5 +60,6 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 #Redirect 301 /source /destination
 Redirect 301 /poems/In_an_Elevator.pdf /school/writing/30/In_an_Elevator.pdf
 Redirect 301 /presentation /school/writing/139w/presentation
+Redirect 301 /65a https://prezi.com/p/3ktxzysqfe2u/
 
 </IfModule>
