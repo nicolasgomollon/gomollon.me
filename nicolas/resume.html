@@ -9,64 +9,83 @@
 	<meta name="theme-color" content="#1e88ea">
 	<link rel="mask-icon" href="//gomollon.me/favicon.svg" color="#1e88ea">
 	<link rel="icon" type="image/png" href="//gomollon.me/favicon.png">
-	<link rel="stylesheet" type="text/css" href="assets/stylesheets/style-resume.css" />
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/resume.css" />
 	<!--[if IE]><script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<script type="text/javascript">
+		function selectElement(element) {
+			if (event !== undefined) {
+				event.preventDefault();
+			}
+			if (document.body.createTextRange) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(element);
+				range.select();
+			} else if (window.getSelection) {
+				var selection = window.getSelection();
+				var range = document.createRange();
+				range.selectNodeContents(element);
+				selection.removeAllRanges();
+				selection.addRange(range);
+			}
+			return false;
+		}
+	</script>
 </head>
 
 <body>
 	<header>
-		<h2>Nicolas Gomollon</h2>
+		<h1>Nicolas Gomollon</h1>
 		<ul>
-			<li>Email: &#x6e;&#105;&#x63;&#111;&#x6c;&#97;&#x73;<span class="none">local-part</span>&#64;<span class="none">domain</span>&#103;&#x6f;&#109;&#x6f;&#108;&#x6c;&#111;&#x6e;&#46;<span class="none">top-level domain</span>&#x6d;&#101;</li>
-			<li>Phone: &#43;&#x31;<span class="none">country calling code</span>&nbsp;&#40;&#56;&#x31;&#56;&#41;<span class="none">area code</span>&nbsp;&#50;&#x37;&#x37;<span class="none">exchange code</span>&#x2d;<span class="none">subscriber number</span>&#49;&#x39;&#50;&#x39;</li>
-			<li>Website: nicolas.gomollon.me</li>
+			<li class="email" ondblclick="return selectElement(this);">&#x6e;&#105;&#x63;&#111;&#x6c;&#97;&#x73;<span class="none">local-part</span>&#64;<span class="none">domain</span>&#103;&#x6f;&#109;&#x6f;&#108;&#x6c;&#111;&#x6e;&#46;<span class="none">top-level domain</span>&#x6d;&#101;</li>
+			<li class="phone" ondblclick="return selectElement(this);">&#43;&#x31;<span class="none">country calling code</span>&nbsp;&#40;&#56;&#x31;&#56;&#41;<span class="none">area code</span>&nbsp;&#50;&#x37;&#x37;<span class="none">exchange code</span>&#x2d;<span class="none">subscriber number</span>&#49;&#x39;&#50;&#x39;</li>
+			<li class="website" ondblclick="return selectElement(this);">nicolas.gomollon.me</li>
 		</ul>
 	</header>
 	<section>
-		<h3>Objective</h3>
-		<p>Seeking a part-time job, work-study, or internship that will utilize software engineering skills.</p>
+		<h3>Highlights</h3>
+		<p>7+ years of experience in iOS and web development. Developed 13 iOS apps and 8 websites.</p>
 	</section>
 	<section>
 		<h3>Education</h3>
 		<article>
-			<h4>Bachelor of Science in Software Engineering<span class="date">March 2018</span></h4>
-			<h4>Minor in Digital Arts</h4>
-			<h4>UC Education Abroad Program in Florence, Italy<span class="date">Winter 2016</span></h4>
-			<p>University of California, Irvine</p>
+			<h4>B.S. Software Engineering<span>Minor: Digital Arts</span><time>Sep 2013 &ndash; Mar 2018</time></h4>
+			<p class="university" ondblclick="return selectElement(this);">University of California, Irvine</p>
 			<ul>
-				<li>3.44 GPA;&nbsp;&nbsp;Dean&rsquo;s Honor List: Fall 2014, Winter 2016, Fall 2016</li>
+				<li>3.41 GPA;&nbsp;&nbsp;Dean&rsquo;s List: Fall 2014, Winter 2016, Fall 2016</li>
 			</ul>
+		</article>
+		<article>
+			<h4>UC Education Abroad Program<time>Winter 2016</time><span class="location" ondblclick="return selectElement(this);">Florence, Italy</span></h4>
 		</article>
 	</section>
 	<section>
 		<h3>Experience</h3>
 		<article>
-			<h4>Data Analyst &amp; Digital Marketing Assistant<span class="date">February 2017 &ndash; Present</span></h4>
-			<p>Bosch Automotive Service Solutions, Inc. / Sweetworxx, Fountain Valley, CA</p>
+			<h4>Data Analyst &amp; Digital Marketing Assistant<time>Feb 2017 &ndash; May 2017</time></h4>
+			<p><span class="company" ondblclick="return selectElement(this);">Bosch Automotive Service Solutions, Inc.</span><span class="location" ondblclick="return selectElement(this);">Fountain Valley, CA</span></p>
 			<ul>
-				<li>Write SQL queries to retrieve data from the SAP Business One system.</li>
-				<li>Compile analytics reports about sales, ads, and social media performance.</li>
-				<li>Assist in the creation of promotions to attract new customers.</li>
-				<li>Perform manual outreach on various social media channels.</li>
-				<li>Set up and manage the server for the redesigned website.</li>
+				<li>Wrote SQL queries to retrieve data from the SAP Business One system.</li>
+				<li>Compiled analytics and KPI reports about sales, ads, and social media performance.</li>
+				<li>Assisted in the creation of promotions to attract new customers.</li>
+				<li>Performed individually tailored outreach across all social media channels.</li>
+				<li>Set up and managed the server for the redesigned website.</li>
 			</ul>
 		</article>
 		<article>
-			<h4>Founder / iOS &amp; Web Developer<span class="date">March 2010 &ndash; Present</span></h4>
-			<p>Techno-Magic, Porter Ranch, CA</p>
+			<h4>Founder / iOS &amp; Web Developer<time>Mar 2010 &ndash; Present</time></h4>
+			<p><span class="company" ondblclick="return selectElement(this);">Techno-Magic</span><span class="location" ondblclick="return selectElement(this);">Porter Ranch, CA</span></p>
 			<ul>
 				<li>Founded to serve as a storefront for my development adventures.</li>
-				<li>Independently design and develop iOS apps, as well as websites.</li>
-				<li>Developed 13 apps for iOS, and actively maintain 1 app on the App Store.</li>
-				<li>Averaged 14,000 app downloads per month over the past 18 months.</li>
+				<li>Developed 13 iOS apps, and actively maintain 1 app on the App Store.</li>
+				<li>Averaged 17,800 app downloads per month for a single app in the first half of 2016.</li>
 				<li>Designed and built 8 websites, and actively maintain 5 of them.</li>
 				<li>Answer support emails in a timely manner and ensure the user&rsquo;s problems are resolved.</li>
 			</ul>
 		</article>
 		<article>
-			<h4>Information Technology Intern<span class="date">August 2010 &ndash; July 2013</span></h4>
-			<p>High Tech Los Angeles, Van Nuys, CA</p>
+			<h4>Information Technology Intern<time>Aug 2010 &ndash; Jul 2013</time></h4>
+			<p><span class="company" ondblclick="return selectElement(this);">High Tech Los Angeles Charter High School</span><span class="location" ondblclick="return selectElement(this);">Van Nuys, CA</span></p>
 			<ul>
 				<li>Helped redesign and set up the school&rsquo;s website to use WordPress.</li>
 				<li>Managed and repaired the school&rsquo;s 400+ laptop and desktop computers.</li>
@@ -74,10 +93,10 @@
 			</ul>
 		</article>
 		<article>
-			<h4>Team Member<span class="date">August 2009 &ndash; June 2013</span></h4>
-			<p>Team 4 ELEMENT Robotics Team, Van Nuys, CA</p>
+			<h4>Team Member<time>Aug 2009 &ndash; Jun 2013</time></h4>
+			<p><span class="company" ondblclick="return selectElement(this);">Team 4 ELEMENT Robotics Team</span><span class="location" ondblclick="return selectElement(this);">Van Nuys, CA</span></p>
 			<ul>
-				<li>Solely designed, built, and maintained the team&rsquo;s website on the Kirby CMS.</li>
+				<li>Designed, built, and maintained the team&rsquo;s website on the Kirby CMS.</li>
 				<li>Programmed the robot in Java using Eclipse.</li>
 				<li>Designed the team&rsquo;s robot using SolidWorks.</li>
 				<li>Created 3D models and animations using Autodesk 3ds Max and Maya.</li>
@@ -87,31 +106,29 @@
 	<section>
 		<h3>Skills</h3>
 		<article>
-			<ul class="comma-separated">
-				<h4>Programming Languages</h4>
+			<ul class="comma-separated programming-languages">
 				<li>Objective-C</li>
 				<li>Swift</li>
 				<li>C</li>
 				<li>C++</li>
+				<li>Java</li>
 				<li>Go</li>
 				<li>PHP</li>
+				<li>JavaScript</li>
 				<li>HTML</li>
 				<li>CSS</li>
 				<li>SQL</li>
 				<li>Ruby</li>
-				<li>Java</li>
-				<li>JavaScript</li>
 				<li>Python</li>
 			</ul>
 		</article>
 		<article>
-			<ul class="comma-separated">
-				<h4>Software</h4>
+			<ul class="comma-separated software">
 				<li>Bash</li>
 				<li>Git</li>
 				<li>Apache</li>
+				<li>Tomcat</li>
 				<li>MySQL</li>
-				<li>phpMyAdmin</li>
 				<li>Xcode</li>
 				<li>Sublime Text</li>
 				<li>Sketch</li>
@@ -122,8 +139,7 @@
 			</ul>
 		</article>
 		<article>
-			<ul class="comma-separated">
-				<h4>Operating Systems</h4>
+			<ul class="comma-separated operating-systems">
 				<li>macOS</li>
 				<li>Windows</li>
 				<li>Linux</li>
@@ -132,9 +148,8 @@
 			</ul>
 		</article>
 		<article>
-			<ul class="comma-separated">
-				<h4>Languages</h4>
-				<li>bilingual in English and Spanish</li>
+			<ul class="comma-separated languages">
+				<li>native bilingual in English and Spanish</li>
 				<li>professional proficiency in Italian</li>
 			</ul>
 		</article>
