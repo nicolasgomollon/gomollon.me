@@ -69,22 +69,8 @@ article h1, article h2, article h3 {
 }
 
 a {
-	-webkit-transition: color 0.1s ease-in-out, border 0.1s ease-in-out;
-	-moz-transition: color 0.1s ease-in-out, border 0.1s ease-in-out;
-	-ms-transition: color 0.1s ease-in-out, border 0.1s ease-in-out;
-	-o-transition: color 0.1s ease-in-out, border 0.1s ease-in-out;
-	transition: color 0.1s ease-in-out, border 0.1s ease-in-out;
-	color: #0881b3;
-	text-decoration: none;
-	border-bottom: 1pt solid transparent;
-}
-
-a:hover {
-	border-bottom: 1pt solid;
-}
-
-a.no-border, a.no-border:hover {
-	border: 0;
+	color: #ffffff;
+	font-weight: 300;
 }
 
 header h1 {
