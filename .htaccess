@@ -87,14 +87,13 @@ RewriteRule ^(.*)$ %{ENV:scheme}://nicolas.%1%{REQUEST_URI} [R=301,L]
 
 # Tomas Gomollon
 RewriteCond %{HTTP_HOST} ^t\.(.*)$ [NC,OR]
-RewriteCond %{HTTP_HOST} ^tomas\.(.*)$ [NC,OR]
 RewriteCond %{HTTP_HOST} ^tommy\.(.*)$ [NC,OR]
 RewriteCond %{HTTP_HOST} ^tomy\.(.*)$ [NC,OR]
 RewriteCond %{HTTP_HOST} ^tommi\.(.*)$ [NC,OR]
 RewriteCond %{HTTP_HOST} ^tomi\.(.*)$ [NC,OR]
 RewriteCond %{HTTP_HOST} ^toams\.(.*)$ [NC,OR]
 RewriteCond %{HTTP_HOST} ^thomas\.(.*)$ [NC]
-RewriteRule ^(.*)$ https://www.facebook.com/tgomollon [R=301,L]
+RewriteRule ^(.*)$ %{ENV:scheme}://tomas.%1%{REQUEST_URI} [R=301,L]
 
 # Carlos Gomollon
 RewriteCond %{HTTP_HOST} ^car\.(.*)$ [NC,OR]

@@ -4,3 +4,5 @@ dl/*
 nicolas/school/*
 !nicolas/school/.htaccess
 !nicolas/school/index.*
+tomas/*
+!tomas/index.*
