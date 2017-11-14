@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Nicolas Gomollon</title>
+	<meta name="author" content="Nicolas Gomollon">
 	<meta name="description" content="I'm a student at UC Irvine, studying Software Engineering and Digital Arts. I'm also an iOS and Web Developer." />
 	<meta name="keywords" content="nicolas gomollon, nico, nicolas, gomollon, techno-magic, techno magic, software engineer, ios developer, web developer, ios apps, app, appstore, app store, iphone, ipad, ipod touch, itouch, itunes" />
 	<meta name="robots" content="index, follow" />
@@ -10,128 +11,230 @@
 	<link rel="mask-icon" href="//gomollon.me/favicon.svg" color="#1e88ea">
 	<link rel="icon" type="image/png" href="//gomollon.me/favicon.png">
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
-	<!--[if IE]><script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+	<script defer type="text/javascript" src="assets/scripts/jquery-3.2.1.min.js"></script>
+	<script defer type="text/javascript" src="assets/scripts/script.js"></script>
 </head>
 
 <body>
-	<section>
+	<nav>
+		<ul>
+			<li><a href="#home" class="active">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#code">Code</a></li>
+			<li><a href="#websites">Websites</a></li>
+			<li><a href="#apps">Apps</a></li>
+		</ul>
+	</nav>
+	<section id="home">
 		<article>
-			<h2>About Nico.</h2>
+			<h2>Hi, I&rsquo;m Nico!</h2>
 			<figure class="inline">
-				<img src="assets/images/nicolas-gomollon.jpg" width="150" height="auto" title="Nicolas Gomollon" alt="Nicolas Gomollon" />
+				<img src="assets/images/nicolas-gomollon.jpg" width="150" height="225" alt="Photo of Nicolas Gomollon" title="Nicolas Gomollon" />
 				<figcaption>Nicolas Gomollon</figcaption>
 			</figure>
 			<p>Hello! My name is <strong>Nicolas Gomollon</strong>, but you can call me <strong>Nico</strong>.</p>
-			<p>I&rsquo;m studying <a target="_blank" href="http://www.informatics.uci.edu/undergrad/bs-software-engineering/">Software Engineering</a> and <a target="_blank" href="http://sites.uci.edu/elad/minor/">Digital Arts</a> at <a target="_blank" href="http://www.uci.edu/">UC Irvine</a>. I&rsquo;ve been crafting digital things since 2010. You can check out my relevant work in more detail below, and visit my company, <a href="https://techno-magic.com/apps">Techno-Magic</a>, which I founded to serve as a storefront for my development adventures. I&rsquo;m fluent in <span class="skill">English</span>, <span class="skill">Spanish</span>, <span class="skill">Italian</span>, <span class="skill">Objective-C</span>, <span class="skill">Swift</span>, <span class="skill">C</span>, <span class="skill">C++</span>, <span class="skill">Go</span>, <span class="skill">PHP</span>, <span class="skill">HTML</span>, <span class="skill">CSS</span>, and <span class="skill">SQL</span>. I also know some <span class="skill">Ruby</span>, <span class="skill">Java</span>, <span class="skill">JavaScript</span>, and <span class="skill">Python</span>.</p>
-			<p>If you&rsquo;re interested, you can view my <a href="https://nicolas.gomollon.me/resume">resume online</a> or <a href="https://nicolas.gomollon.me/resume.pdf">as a PDF</a>.</p>
-			<p>You can find me on <a href="https://twitter.com/gomollon">Twitter</a>, <a href="https://www.facebook.com/nicolas.gomollon">Facebook</a>, <a href="https://www.instagram.com/gomollon/">Instagram</a>, <a href="https://github.com/nicolasgomollon">GitHub</a>, and <a href="https://www.linkedin.com/in/nicolasgomollon">LinkedIn</a>.</p>
-			<p>If you need to get in touch, email <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x6e;&#105;&#x63;&#111;&#x6c;&#97;&#x73;&#64;%67%6f%6d%6f%6c%6c%6f%6e&#46;&#x6d;&#101;">&#x6e;&#105;&#x63;&#111;&#x6c;&#97;&#x73;<span class="none">local-part</span>&#64;<span class="none">domain</span>&#103;&#x6f;&#109;&#x6f;&#108;&#x6c;&#111;&#x6e;&#46;<span class="none">top-level domain</span>&#x6d;&#101;</a> or tweet <a href="https://twitter.com/gomollon">@gomollon</a>.</p>
+			<p>I&rsquo;m an iOS Developer living in Los Angeles, and studying <a target="_blank" href="http://www.informatics.uci.edu/undergrad/bs-software-engineering/">Software Engineering</a> and <a target="_blank" href="http://sites.uci.edu/elad/minor/">Digital Arts</a> at <a target="_blank" href="http://www.uci.edu/">UC Irvine</a>. I founded <a target="_blank" href="https://techno-magic.com/">Techno-Magic</a> in 2010 to serve as a storefront for my development adventures. You can learn more about me, and check out my relevant work in more detail below.</p>
+			<p>If you&rsquo;re interested, you can <a target="_blank" href="https://nicolas.gomollon.me/resume">view my resume online</a> or <a target="_blank" href="https://nicolas.gomollon.me/resume.pdf">as a PDF</a>.</p>
+			<p>You can find me on <a target="_blank" href="https://twitter.com/gomollon">Twitter</a>, <a target="_blank" href="https://www.facebook.com/nicolas.gomollon">Facebook</a>, <a target="_blank" href="https://www.instagram.com/gomollon/">Instagram</a>, <a target="_blank" href="https://github.com/nicolasgomollon">GitHub</a>, and <a target="_blank" href="https://www.linkedin.com/in/nicolasgomollon">LinkedIn</a>.</p>
+			<p>If you need to get in touch, email <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x6e;&#105;&#x63;&#111;&#x6c;&#97;&#x73;&#64;%67%6f%6d%6f%6c%6c%6f%6e&#46;&#x6d;&#101;">&#x6e;&#105;&#x63;&#111;&#x6c;&#97;&#x73;<span class="none">local-part</span>&#64;<span class="none">domain</span>&#103;&#x6f;&#109;&#x6f;&#108;&#x6c;&#111;&#x6e;&#46;<span class="none">top-level domain</span>&#x6d;&#101;</a> or tweet <a target="_blank" href="https://twitter.com/gomollon">@gomollon</a>.</p>
 		</article>
 	</section>
-	<section>
+	<section id="about">
+		<h2>About</h2>
 		<article>
-			<h2>Public Code Repositories</h2>
-			<div class="repos">
-				<div class="repo">
-					<div class="title"><a target="_blank" href="https://github.com/nicolasgomollon/AppSales-Mobile">AppSales-Mobile</a></div>
-					<div class="skills">
-						<span class="skill">Objective-C</span>
-					</div>
-					<div class="description">An app that allows iOS and Mac App Store developers to download and analyze their daily and weekly sales reports from iTunes Connect.<br /><i>I took over development and maintenance after the original publisher abandoned it.</i></div>
+			<p>I started learning to develop software on my own in 2010 (at the age of 14) because I was intrigued by the touchscreen on my iPod touch, and curious about how the apps I used were made. I now have 7 years of experience in the field, and am pursuing a&hellip;</p>
+			<div class="degree">
+				<img src="assets/vectors/Degree.svg" alt="Bachelor of Science in Software Engineering and Minor in Digital Arts at University of California, Irvine" />
+			</div>
+		</article>
+		<article>
+			<p>I&rsquo;m particularly interested in human-computer interaction and designing powerful yet intuitive user interfaces. My main focus is in iOS development, but I also have experience in full stack web development.</p>
+			<h3>Since 2010, I&rsquo;ve made&hellip;</h3>
+			<div class="container">
+				<div class="app">
+					<div class="icon">15</div>
+					<p>Apps</p>
 				</div>
-				<div class="repo">
-					<div class="title"><a target="_blank" href="https://github.com/nicolasgomollon/peterplanner.com">peterplanner.com</a></div>
-					<div class="skills">
-						<span class="skill">PHP</span>
-						<span class="skill">HTML</span>
-						<span class="skill">CSS</span>
-						<span class="skill">JavaScript</span>
-						<span class="skill">Go</span>
+				<div class="ampersand">&amp;</div>
+				<div class="browser">
+					<div class="window">
+						<div class="location">https://</div>
+						<div class="website">9</div>
 					</div>
-					<div class="description">A course prerequisite tracker and scheduling tool for UCI students, aimed at improving the course enrollment experience. The project consists of a series of modules, including <a target="_blank" href="https://github.com/nicolasgomollon/peterplanner.com">a web app</a>, <a target="_blank" href="https://github.com/nicolasgomollon/peterplanner">a core script</a>, <a target="_blank" href="https://github.com/nicolasgomollon/peterplanner-download">a downloading script</a>, and <a target="_blank" href="https://github.com/nicolasgomollon/peterplanner-parse">a parsing script</a>.<br /><i>I was the main person building the web app as part of a quarter-long group project course.</i></div>
-				</div>
-				<div class="repo">
-					<div class="title"><a target="_blank" href="https://github.com/nicolasgomollon/LPRTableView">LPRTableView</a></div>
-					<div class="skills">
-						<span class="skill">Swift</span>
-					</div>
-					<div class="description">A drop-in replacement for <code>UITableView</code> and <code>UITableViewController</code> that supports long-press reordering of cells.<br /><i>I adapted an existing project into Swift, and ended up continuing its development after the original publisher abandoned theirs.</i></div>
-				</div>
-				<div class="repo">
-					<div class="title"><a target="_blank" href="https://github.com/nicolasgomollon/PTATableViewCell">PTATableViewCell</a></div>
-					<div class="skills">
-						<span class="skill">Swift</span>
-					</div>
-					<div class="description">A convenient <code>UITableViewCell</code> subclass that supports pan gestures to trigger actions.<br /><i>I adapted an existing project into Swift, and ended up continuing its development after the original publisher abandoned theirs.</i></div>
-				</div>
-				<div class="repo">
-					<div class="title"><a target="_blank" href="https://github.com/nicolasgomollon/STBTableViewIndex">STBTableViewIndex</a></div>
-					<div class="skills">
-						<span class="skill">Swift</span>
-					</div>
-					<div class=description>A section index bar that only becomes visible when used, and works with <code>UITableView</code> and <code>UICollectionView</code>.<br /><i>I adapted an existing project into Swift, and incorporated my own changes to my fork.</i></div>
-				</div>
-				<div class="repo">
-					<div class="title"><a target="_blank" href="https://github.com/nicolasgomollon/team4minimal">team4minimal</a></div>
-					<div class="skills">
-						<span class="skill">PHP</span>
-						<span class="skill">HTML</span>
-						<span class="skill">CSS</span>
-					</div>
-					<div class="description">A minimalistic redesign of <code>team4element.com</code>.<br /><i>I designed, built, and maintained this website for the Team 4 ELEMENT robotics team, which was their official website from early 2013 until after I graduated later that year.</i></div>
+					<p>Websites</p>
 				</div>
 			</div>
 		</article>
 		<article>
-			<h2>Websites</h2>
-			<div class="website">
-				<a class="preview" target="_blank" href="https://nicolas.gomollon.me/"><div class="location">nicolas.gomollon.me</div><img src="assets/images/web-gomollon.png" width="600" height="auto" title="My Personal Website" alt="My Personal Website" /></a>
-				<p><span class="date">Oct 2014 &ndash; Present</span><strong><a target="_blank" href="https://nicolas.gomollon.me/">My Personal Website</a></strong></p>
-			</div>
-			<div class="website">
-				<a class="preview" target="_blank" href="https://techno-magic.com/"><div class="location">techno-magic.com</div><img src="assets/images/web-techno-magic.png" width="600" height="auto" title="Techno-Magic, My Company Website" alt="Techno-Magic, My Company Website" /></a>
-				<p><span class="date">Dec 2010 &ndash; Present</span><strong><a target="_blank" href="https://techno-magic.com/">Techno-Magic, My Company Website</a></strong></p>
-			</div>
-			<div class="website">
-				<a class="preview" target="_blank" href="https://peterplanner.com/"><div class="location">peterplanner.com</div><img src="assets/images/web-peterplanner.png" width="600" height="auto" title="PeterPlanner" alt="PeterPlanner" /></a>
-				<p><span class="date">Jan 2017 &ndash; Present</span><strong><a target="_blank" href="https://peterplanner.com/">PeterPlanner</a></strong></p>
-			</div>
-			<div class="website">
-				<a class="preview" target="_blank" href="https://nicolas.gomollon.me/school/robotics/team4minimal/"><div class="location">team4element.com</div><img src="assets/images/web-team4minimal.png" width="600" height="auto" title="Team 4 ELEMENT, Redesign" alt="Team 4 ELEMENT, Redesign" /></a>
-				<p><span class="date">Jan 2013 &ndash; Aug 2013</span><strong><a target="_blank" href="https://nicolas.gomollon.me/school/robotics/team4minimal/">Team 4 ELEMENT, Redesign</a></strong></p>
-			</div>
-			<div class="website">
-				<a class="preview" target="_blank" href="https://nicolas.gomollon.me/school/robotics/team4fastweb/"><div class="location">team4element.com</div><img src="assets/images/web-team4element.png" width="600" height="auto" title="Team 4 ELEMENT" alt="Team 4 ELEMENT" /></a>
-				<p><span class="date">Jul 2012 &ndash; Dec 2012</span><strong><a target="_blank" href="https://nicolas.gomollon.me/school/robotics/team4fastweb/">Team 4 ELEMENT</a></strong></p>
-			</div>
-			<div class="website">
-				<a class="preview" target="_blank" href="http://ht-la.org/"><div class="location">ht-la.org</div><img src="assets/images/web-htla.png" width="600" height="auto" title="High Tech Los Angeles Charter High School" alt="High Tech Los Angeles Charter High School" /></a>
-				<p><span class="date">Jan 2012 &ndash; Jun 2012</span><strong><a target="_blank" href="http://ht-la.org/">High Tech Los Angeles Charter High School</a></strong></p>
+			<p>I&rsquo;m a native bilingual in English <img class="flag" src="assets/vectors/US.svg" alt="(Flag of the United States)" title="Flag of the United States" /> and Spanish <img class="flag" src="assets/vectors/AR.svg" alt="(Flag of Argentina)" title="Flag of Argentina" />, and learned Italian <img class="flag" src="assets/vectors/IT.svg" alt="(Flag of Italy)" title="Flag of Italy" /> after studying abroad in Florence, Italy. I love traveling, and make a point of doing so at least a couple of times throughout the year. I&rsquo;m also fluent in&hellip;</p>
+			<div class="hero-skills">
+				<p>
+					<span class="skill">Swift</span>
+					<span class="skill">Objective-C</span>
+					<span class="skill">C</span>
+					<span class="skill">C++</span>
+					<span class="skill">Java</span>
+					<span class="skill">Go</span>
+				</p>
+				<p>
+					<span class="skill">PHP</span>
+					<span class="skill">JavaScript</span>
+					<span class="skill">HTML</span>
+					<span class="skill">CSS</span>
+					<span class="skill">SQL</span>
+				</p>
+				<p>
+					<span class="skill">Ruby</span>
+					<span class="skill">Python</span>
+				</p>
 			</div>
 		</article>
 		<article>
-			<h2>iOS Apps</h2>
-			<app>
-				<a target="_blank" href="https://itunes.apple.com/app/id788290967"><img class="app-icon" src="assets/images/app-icon-musiq.png" alt="MusiQ app" title="MusiQ app" /></a>
-				<info>
-					<name><a target="_blank" href="https://itunes.apple.com/app/id788290967">MusiQ Player - Queue &amp; Control Your Music</a></name>
-<p>A gesture-based music player that lets you queue up songs from your music library and reorder them however you like, on-the-fly. It’s focused around the management of the now playing queue, and allows exporting saved queues directly to the native Music app.</p>
-				</info>
-			</app>
-			<app>
-				<a target="_blank" href="https://itunes.apple.com/app/id480429226"><img class="app-icon" src="assets/images/app-icon-powergrades.png" alt="PowerGrades app" title="PowerGrades app" /></a>
-				<info>
-					<name><a target="_blank" href="https://itunes.apple.com/app/id480429226">PowerGrades - Track Grade Changes in PowerSchool</a></name>
-<p>See grades, assignments, and scores from PowerSchool at a glance with this convenient app. Automatically keep track of changes to class grades, assignment scores, and GPA; and receive push notifications when there are any changes.</p>
-				</info>
-			</app>
-			<br />
-			<div class="center">
-				<a class="no-border" target="_blank" href="https://itunes.apple.com/developer/id376122134">
-					<img class="app-icon" src="assets/images/app-icon-appstore.png" alt="App Store" title="App Store">
-					<div class="title">App Store</div>
+			<p>Most programmers run on coffee, but I run on <a target="_blank" href="https://en.wikipedia.org/wiki/Mate_(drink)"><em>mate</em></a> instead, and listen to electro house and progressive house music while I code. Some of the tools I&rsquo;m skilled at using include&hellip;</p>
+			<div class="hero-skills">
+				<p>
+					<span class="skill">Xcode</span>
+					<span class="skill">Sublime Text</span>
+				</p>
+				<p>
+					<span class="skill">Bash</span>
+					<span class="skill">Git</span>
+					<span class="skill">Apache</span>
+					<span class="skill">Tomcat</span>
+					<span class="skill">MySQL</span>
+				</p>
+				<p>
+					<span class="skill">Sketch</span>
+					<span class="skill">Adobe Photoshop</span>
+					<span class="skill">Adobe Illustrator</span>
+					<span class="skill">Adobe InDesign</span>
+				</p>
+			</div>
+		</article>
+		<article>
+			<p>It&rsquo;s easy to get caught up in the fascinating advances of the tech world, so I like to disconnect by visiting contemporary art museums, learning the principles of good design and typography, and spending time with friends, as well as video chatting with the ones that live abroad.</p>
+		</article>
+	</section>
+	<section id="code">
+		<h2>Public Code Repositories</h2>
+		<article class="repos">
+			<div class="repo">
+				<h4><a target="_blank" href="https://github.com/nicolasgomollon/AppSales-Mobile">AppSales-Mobile</a></h4>
+				<div class="skills">
+					<span class="skill">Objective-C</span>
+				</div>
+				<div class="description">An app that allows iOS and Mac App Store developers to download and analyze their daily and weekly sales reports from iTunes Connect.</div>
+				<div class="summary">I took over development and maintenance after the original publisher abandoned it.</div>
+			</div>
+			<div class="repo">
+				<h4><a target="_blank" href="https://github.com/nicolasgomollon/peterplanner.com">peterplanner.com</a></h4>
+				<div class="skills">
+					<span class="skill">PHP</span>
+					<span class="skill">HTML</span>
+					<span class="skill">CSS</span>
+					<span class="skill">JavaScript</span>
+					<span class="skill">Go</span>
+				</div>
+				<div class="description">A course prerequisite tracker and scheduling tool for UCI students, aimed at improving the course enrollment experience. The project consists of a series of modules, including <a target="_blank" href="https://github.com/nicolasgomollon/peterplanner.com">a web app</a>, <a target="_blank" href="https://github.com/nicolasgomollon/peterplanner">a core script</a>, <a target="_blank" href="https://github.com/nicolasgomollon/peterplanner-download">a downloading script</a>, and <a target="_blank" href="https://github.com/nicolasgomollon/peterplanner-parse">a parsing script</a>.</div>
+				<div class="summary">I was the main person building the web app as part of a quarter-long group project course.</div>
+			</div>
+			<div class="repo">
+				<h4><a target="_blank" href="https://github.com/nicolasgomollon/LPRTableView">LPRTableView</a></h4>
+				<div class="skills">
+					<span class="skill">Swift</span>
+				</div>
+				<div class="description">A drop-in replacement for <code>UITableView</code> and <code>UITableViewController</code> that supports long-press reordering of cells.</div>
+				<div class="summary">I adapted an existing project into Swift, and ended up continuing its development after the original publisher abandoned theirs.</div>
+			</div>
+			<div class="repo">
+				<h4><a target="_blank" href="https://github.com/nicolasgomollon/PTATableViewCell">PTATableViewCell</a></h4>
+				<div class="skills">
+					<span class="skill">Swift</span>
+				</div>
+				<div class="description">A convenient <code>UITableViewCell</code> subclass that supports pan gestures to trigger actions.</div>
+				<div class="summary">I adapted an existing project into Swift, and ended up continuing its development after the original publisher abandoned theirs.</div>
+			</div>
+			<div class="repo">
+				<h4><a target="_blank" href="https://github.com/nicolasgomollon/STBTableViewIndex">STBTableViewIndex</a></h4>
+				<div class="skills">
+					<span class="skill">Swift</span>
+				</div>
+				<div class="description">A section index bar that only becomes visible when used, and works with <code>UITableView</code> and <code>UICollectionView</code>.</div>
+				<div class="summary">I adapted an existing project into Swift, and incorporated my own changes to my fork.</div>
+			</div>
+			<div class="repo">
+				<h4><a target="_blank" href="https://github.com/nicolasgomollon/team4minimal">team4minimal</a></h4>
+				<div class="skills">
+					<span class="skill">PHP</span>
+					<span class="skill">HTML</span>
+					<span class="skill">CSS</span>
+				</div>
+				<div class="description">A minimalistic redesign of <code>team4element.com</code>.</div>
+				<div class="summary">I designed, built, and maintained this website for the Team 4 ELEMENT robotics team, which was their official website from early 2013 until after I graduated later that year.</div>
+			</div>
+		</article>
+	</section>
+	<section id="websites">
+		<h2>Websites</h2>
+		<article class="websites">
+			<div class="browser">
+				<a class="window" target="_blank" href="https://nicolas.gomollon.me/">
+					<div class="location">nicolas.gomollon.me</div>
+					<img class="website" src="assets/images/web-gomollon.png" alt="My Personal Website" title="My Personal Website" />
 				</a>
+				<h4><a target="_blank" href="https://nicolas.gomollon.me/">My Personal Website</a></h4>
+				<p>Oct 2014 &ndash; Present</p>
+			</div>
+			<div class="browser">
+				<a class="window" target="_blank" href="https://techno-magic.com/">
+					<div class="location">techno-magic.com</div>
+					<img class="website" src="assets/images/web-techno-magic.png" alt="Techno-Magic, My Company Website" title="Techno-Magic, My Company Website" />
+				</a>
+				<h4><a target="_blank" href="https://techno-magic.com/">Techno-Magic</a></h4>
+				<p>Dec 2010 &ndash; Present</p>
+			</div>
+			<div class="browser">
+				<a class="window" target="_blank" href="https://peterplanner.com/">
+					<div class="location">peterplanner.com</div>
+					<img class="website" src="assets/images/web-peterplanner.png" alt="PeterPlanner" title="PeterPlanner" />
+				</a>
+				<h4><a target="_blank" href="https://peterplanner.com/">PeterPlanner</a></h4>
+				<p>Jan 2017 &ndash; Present</p>
+			</div>
+			<div class="browser">
+				<a class="window" target="_blank" href="https://nicolas.gomollon.me/school/robotics/team4minimal/">
+					<div class="location">team4element.com</div>
+					<img class="website" src="assets/images/web-team4minimal.png" alt="Team 4 ELEMENT, Redesign" title="Team 4 ELEMENT, Redesign" />
+				</a>
+				<h4><a target="_blank" href="https://nicolas.gomollon.me/school/robotics/team4minimal/">Team 4 ELEMENT, Redesign</a></h4>
+				<p>Jan 2013 &ndash; Aug 2013</p>
+			</div>
+			<div class="browser">
+				<a class="window" target="_blank" href="https://nicolas.gomollon.me/school/robotics/team4fastweb/">
+					<div class="location">team4element.com</div>
+					<img class="website" src="assets/images/web-team4element.png" alt="Team 4 ELEMENT" title="Team 4 ELEMENT" />
+				</a>
+				<h4><a target="_blank" href="https://nicolas.gomollon.me/school/robotics/team4fastweb/">Team 4 ELEMENT</a></h4>
+				<p>Jul 2012 &ndash; Dec 2012</p>
+			</div>
+			<div class="browser">
+				<a class="window" target="_blank" href="http://ht-la.org/">
+					<div class="location">ht-la.org</div>
+					<img class="website" src="assets/images/web-htla.png" alt="High Tech Los Angeles Charter High School" title="High Tech Los Angeles Charter High School" />
+				</a>
+				<h4><a target="_blank" href="http://ht-la.org/">High Tech LA Charter High School</a></h4>
+				<p>Jan 2012 &ndash; Jun 2012</p>
+			</div>
+		</article>
+	</section>
+	<section id="apps">
+		<h2>iOS Apps</h2>
+		<article class="app">
+			<a target="_blank" href="https://itunes.apple.com/app/id788290967"><img class="app-icon" src="assets/images/app-icon-musiq.png" alt="MusiQ app icon" title="MusiQ app" /></a>
+			<div class="app-description">
+				<h3><a class="" target="_blank" href="https://itunes.apple.com/app/id788290967">MusiQ Player - Queue Music</a></h3>
+				<p>A gesture-based music player that lets you queue up songs from your music library and reorder them however you like, on-the-fly. It’s focused around the management of the now playing queue, and allows exporting saved queues directly to the native Music app.</p>
 			</div>
 		</article>
 	</section>
