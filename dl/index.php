@@ -35,10 +35,9 @@
 	<meta charset="utf-8" />
 	<title>Gomollon Family &rsaquo; DL &rsaquo; Index</title>
 	<meta name="robots" content="noindex, nofollow" />
-	<meta name="theme-color" content="#1e88ea">
-	<link rel="mask-icon" href="//gomollon.me/favicon.svg" color="#1e88ea">
-	<link rel="icon" type="image/png" href="//gomollon.me/favicon.png">
-	<!--[if IE]><script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<meta name="theme-color" content="#1e88ea" />
+	<link rel="mask-icon" href="//gomollon.me/favicon.svg" color="#1e88ea" />
+	<link rel="icon" type="image/png" href="//gomollon.me/favicon.png" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
 	<style type="text/css">
 		@charset "utf-8";
