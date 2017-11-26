@@ -10,6 +10,8 @@ var sections = $('section');
 var nav = $('nav');
 var nav_height = nav.outerHeight();
 
+nav.find('a[href="#home"]').addClass('active');
+
 $(window).on('scroll', function() {
 	var cur_pos = $(this).scrollTop();
 	if (cur_pos >= nav_height) {
