@@ -83,12 +83,6 @@ a:hover {
 	box-shadow: inset 0 -23px 0 -1px #80bdff;
 }
 
-section {
-	max-width: 500pt;
-	margin: 0 auto;
-	padding: 0 20pt;
-}
-
 nav {
 	/* Navigation bar style from https://www.apple.com/ */
 	position: fixed;
@@ -143,8 +137,9 @@ nav>ul>li>a.active {
 }
 
 section {
-	padding-top: 40pt;
-	margin-top: -40pt;
+	max-width: 500pt;
+	padding: 40pt 20pt 0 20pt;
+	margin: -40pt auto 0 auto;
 }
 
 nav+* {
