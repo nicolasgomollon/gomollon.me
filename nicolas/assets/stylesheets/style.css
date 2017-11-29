@@ -100,11 +100,11 @@ nav {
 	-ms-backdrop-filter: saturate(180%) blur(15pt);
 	-o-backdrop-filter: saturate(180%) blur(15pt);
 	backdrop-filter: saturate(180%) blur(15pt)
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
+	-webkit-transition: box-shadow .3s ease-in-out;
+	-moz-transition: box-shadow .3s ease-in-out;
+	-ms-transition: box-shadow .3s ease-in-out;
+	-o-transition: box-shadow .3s ease-in-out;
+	transition: box-shadow .3s ease-in-out;
 }
 
 nav.shadow {
