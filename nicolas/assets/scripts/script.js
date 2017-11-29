@@ -8,23 +8,25 @@
 var disableLinkStateOnScroll = false;
 var sections = $('section');
 var nav = $('nav');
-var nav_height = nav.outerHeight();
 
 nav.find('a[href="#home"]').addClass('active');
 
 $(window).on('scroll', function() {
 	var cur_pos = $(this).scrollTop();
-	if (cur_pos >= nav_height) {
+	var top_offset = -parseFloat(sections.first().css('margin-top'));
+	if (cur_pos >= top_offset) {
 		nav.addClass('shadow');
 	} else {
 		nav.removeClass('shadow');
 	}
 	if (disableLinkStateOnScroll) { return; }
-	var page_height = $(document).height() - $(window).height() - nav_height - 100;
+	var bottom_offset = parseFloat(sections.last().css('padding-bottom'));
+	var page_height = $(document).height() - $(window).height() - top_offset - bottom_offset - 40;
 	if (cur_pos >= page_height) {
 		nav.find('a').removeClass('active');
 		nav.find('a[href="#'+sections.last().attr('id')+'"]').addClass('active');
 	} else {
+		var nav_height = nav.outerHeight();
 		sections.each(function() {
 			var top = $(this).offset().top - nav_height;
 			var bottom = top + $(this).outerHeight();
