@@ -13,7 +13,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/stylesheets/resume.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
 	<script type="text/javascript">
-		function selectElement(element) {
+		function selectElement(element, event) {
+			event = event || window.event;
 			if (event !== undefined) {
 				event.preventDefault();
 			}
@@ -37,9 +38,9 @@
 	<header>
 		<h1>Nicolas Gomollon</h1>
 		<ul>
-			<li class="email" ondblclick="return selectElement(this);">&#x6e;&#105;&#x63;&#111;&#x6c;&#97;&#x73;<span class="none">local-part</span>&#64;<span class="none">domain</span>&#103;&#x6f;&#109;&#x6f;&#108;&#x6c;&#111;&#x6e;&#46;<span class="none">top-level domain</span>&#x6d;&#101;</li>
-			<li class="phone" ondblclick="return selectElement(this);">&#43;&#x31;<span class="none">country calling code</span>&nbsp;&#40;&#56;&#x31;&#56;&#41;<span class="none">area code</span>&nbsp;&#50;&#x37;&#x37;<span class="none">exchange code</span>&#x2d;<span class="none">subscriber number</span>&#49;&#x39;&#50;&#x39;</li>
-			<li class="website" ondblclick="return selectElement(this);">nicolas.gomollon.me</li>
+			<li class="email" ondblclick="return selectElement(this, event);">&#x6e;&#105;&#x63;&#111;&#x6c;&#97;&#x73;<span class="none">local-part</span>&#64;<span class="none">domain</span>&#103;&#x6f;&#109;&#x6f;&#108;&#x6c;&#111;&#x6e;&#46;<span class="none">top-level domain</span>&#x6d;&#101;</li>
+			<li class="phone" ondblclick="return selectElement(this, event);">&#43;&#x31;<span class="none">country calling code</span>&nbsp;&#40;&#56;&#x31;&#56;&#41;<span class="none">area code</span>&nbsp;&#50;&#x37;&#x37;<span class="none">exchange code</span>&#x2d;<span class="none">subscriber number</span>&#49;&#x39;&#50;&#x39;</li>
+			<li class="website" ondblclick="return selectElement(this, event);">nicolas.gomollon.me</li>
 		</ul>
 	</header>
 	<section>
@@ -50,20 +51,20 @@
 		<h3>Education</h3>
 		<article>
 			<h4>B.S. Software Engineering<span>Minor: Digital Arts</span><time>Sep 2013 &ndash; Mar 2018</time></h4>
-			<p class="university" ondblclick="return selectElement(this);">University of California, Irvine</p>
+			<p class="university" ondblclick="return selectElement(this, event);">University of California, Irvine</p>
 			<ul>
 				<li>3.46 GPA;&nbsp;&nbsp;Dean&rsquo;s List: Fall 2014, Winter 2016, Fall 2016, Spring 2017</li>
 			</ul>
 		</article>
 		<article>
-			<h4>UC Education Abroad Program<time>Winter 2016</time><span class="location" ondblclick="return selectElement(this);">Florence, Italy</span></h4>
+			<h4>UC Education Abroad Program<time>Winter 2016</time><span class="location" ondblclick="return selectElement(this, event);">Florence, Italy</span></h4>
 		</article>
 	</section>
 	<section>
 		<h3>Experience</h3>
 		<article>
 			<h4>Data Analyst &amp; Digital Marketing Assistant<time>Feb 2017 &ndash; May 2017</time></h4>
-			<p><span class="company" ondblclick="return selectElement(this);">Bosch Automotive Service Solutions, Inc.</span><span class="location" ondblclick="return selectElement(this);">Fountain Valley, CA</span></p>
+			<p><span class="company" ondblclick="return selectElement(this, event);">Bosch Automotive Service Solutions, Inc.</span><span class="location" ondblclick="return selectElement(this, event);">Fountain Valley, CA</span></p>
 			<ul>
 				<li>Wrote SQL queries to retrieve data from the SAP Business One system.</li>
 				<li>Compiled analytics and KPI reports about sales, ads, and social media performance.</li>
@@ -74,7 +75,7 @@
 		</article>
 		<article>
 			<h4>Founder / iOS &amp; Web Developer<time>Mar 2010 &ndash; Present</time></h4>
-			<p><span class="company" ondblclick="return selectElement(this);">Techno-Magic</span><span class="location" ondblclick="return selectElement(this);">Porter Ranch, CA</span></p>
+			<p><span class="company" ondblclick="return selectElement(this, event);">Techno-Magic</span><span class="location" ondblclick="return selectElement(this, event);">Porter Ranch, CA</span></p>
 			<ul>
 				<li>Founded to serve as a storefront for my development adventures.</li>
 				<li>Developed 15 iOS apps, and actively maintain 1 app on the App Store, and 1 app on GitHub.</li>
@@ -85,7 +86,7 @@
 		</article>
 		<article>
 			<h4>Information Technology Intern<time>Aug 2010 &ndash; Jul 2013</time></h4>
-			<p><span class="company" ondblclick="return selectElement(this);">High Tech Los Angeles Charter High School</span><span class="location" ondblclick="return selectElement(this);">Van Nuys, CA</span></p>
+			<p><span class="company" ondblclick="return selectElement(this, event);">High Tech Los Angeles Charter High School</span><span class="location" ondblclick="return selectElement(this, event);">Van Nuys, CA</span></p>
 			<ul>
 				<li>Helped redesign and set up the school&rsquo;s website to use WordPress.</li>
 				<li>Managed and repaired the school&rsquo;s 400+ laptop and desktop computers.</li>
@@ -94,7 +95,7 @@
 		</article>
 		<article>
 			<h4>Team Member<time>Aug 2009 &ndash; Jun 2013</time></h4>
-			<p><span class="company" ondblclick="return selectElement(this);">Team 4 ELEMENT Robotics Team</span><span class="location" ondblclick="return selectElement(this);">Van Nuys, CA</span></p>
+			<p><span class="company" ondblclick="return selectElement(this, event);">Team 4 ELEMENT Robotics Team</span><span class="location" ondblclick="return selectElement(this, event);">Van Nuys, CA</span></p>
 			<ul>
 				<li>Designed, built, and maintained the team&rsquo;s website on the Kirby CMS.</li>
 				<li>Programmed the robot in Java using Eclipse.</li>
