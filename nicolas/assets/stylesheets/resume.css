@@ -64,25 +64,51 @@
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-* {
-	-webkit-text-size-adjust: none;
-}
+/**
+ * CSS Reset
+ *
+ * Eric Meyer
+ * http://meyerweb.com/eric/tools/css/reset/
+**/
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, hr, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, app, info, name, dialog, embed, figure, figcaption, social, footer, header, hgroup, menu, nav, output, ruby, section, person, content, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	vertical-align: baseline;
-	background-color: transparent;
 }
 
-article, aside, details, app, info, name, figcaption, figure, social, footer, header, hgroup, menu, nav, section, person, content {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/** CSS Reset - End **/
+
 html {
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
 	-webkit-font-smoothing: antialiased;
-	-khtml-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	-ms-font-smoothing: antialiased;
 	-o-font-smoothing: antialiased;
@@ -93,8 +119,8 @@ body {
 	background: #ffffff;
 	color: #000000;
 	font-family: "Roboto", system, -apple-system, -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	font-weight: 300;
 	font-size: 11pt;
+	font-weight: 300;
 	line-height: 1.5;
 }
 
@@ -374,58 +400,6 @@ time {
 	background-position: left center;
 	background-repeat: no-repeat;
 	background-size: 21px 21px;
-}
-
-b {
-	font-weight: 500;
-}
-
-i {
-	font-style: italic;
-}
-
-em, .highlight {
-	font-style: normal;
-	background-color: #fffeca;
-	padding: 0 0.1em;
-}
-
-.highlight.red {
-	background-color: #ffcaca;
-}
-
-.regular {
-	font-weight: 400;
-}
-
-.small-caps {
-	font-variant: small-caps;
-}
-
-.small {
-	font-size: 75%;
-}
-
-.skill {
-	white-space: nowrap;
-	padding: 0 0.1em;
-	background-color: #d1d9e5;
-	border: 1pt solid #c5cdd9;
-	-webkit-border-radius: 3pt;
-	-moz-border-radius: 3pt;
-	-ms-border-radius: 3pt;
-	-o-border-radius: 3pt;
-	border-radius: 3pt;
-}
-
-.center {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.debug {
-	border: 1pt solid red;
 }
 
 .hidden, .none {
