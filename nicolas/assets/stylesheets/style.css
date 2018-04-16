@@ -397,6 +397,192 @@ img.profile {
 	background-size: 100% 100%;
 }
 
+a.social {
+	font-weight: bold;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+a.social.twitter {
+	color: #1da1f2;
+}
+
+a.social.twitter:hover {
+	color: #ffffff;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #1da1f2;
+	-moz-box-shadow: inset 0 -23px 0 -1px #1da1f2;
+	-ms-box-shadow: inset 0 -23px 0 -1px #1da1f2;
+	-o-box-shadow: inset 0 -23px 0 -1px #1da1f2;
+	box-shadow: inset 0 -23px 0 -1px #1da1f2;
+}
+
+a.social.facebook {
+	color: #3c5a99;
+}
+
+a.social.facebook:hover {
+	color: #ffffff;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #3c5a99;
+	-moz-box-shadow: inset 0 -23px 0 -1px #3c5a99;
+	-ms-box-shadow: inset 0 -23px 0 -1px #3c5a99;
+	-o-box-shadow: inset 0 -23px 0 -1px #3c5a99;
+	box-shadow: inset 0 -23px 0 -1px #3c5a99;
+}
+
+a.social.instagram>span {
+	-webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-ms-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+}
+
+a.social.instagram>span.char1 {
+	color: #3e6cdd;
+}
+
+a.social.instagram:hover>span.char1 {
+	color: #ffffff;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #3e6cdd;
+	-moz-box-shadow: inset 0 -23px 0 -1px #3e6cdd;
+	-ms-box-shadow: inset 0 -23px 0 -1px #3e6cdd;
+	-o-box-shadow: inset 0 -23px 0 -1px #3e6cdd;
+	box-shadow: inset 0 -23px 0 -1px #3e6cdd;
+}
+
+a.social.instagram>span.char2 {
+	color: #823acb;
+}
+
+a.social.instagram:hover>span.char2 {
+	color: #ffffff;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #823acb;
+	-moz-box-shadow: inset 0 -23px 0 -1px #823acb;
+	-ms-box-shadow: inset 0 -23px 0 -1px #823acb;
+	-o-box-shadow: inset 0 -23px 0 -1px #823acb;
+	box-shadow: inset 0 -23px 0 -1px #823acb;
+}
+
+a.social.instagram>span.char3 {
+	color: #b832ac;
+}
+
+a.social.instagram:hover>span.char3 {
+	color: #ffffff;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #b832ac;
+	-moz-box-shadow: inset 0 -23px 0 -1px #b832ac;
+	-ms-box-shadow: inset 0 -23px 0 -1px #b832ac;
+	-o-box-shadow: inset 0 -23px 0 -1px #b832ac;
+	box-shadow: inset 0 -23px 0 -1px #b832ac;
+}
+
+a.social.instagram>span.char4 {
+	color: #d92e7a;
+}
+
+a.social.instagram:hover>span.char4 {
+	color: #ffffff;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #d92e7a;
+	-moz-box-shadow: inset 0 -23px 0 -1px #d92e7a;
+	-ms-box-shadow: inset 0 -23px 0 -1px #d92e7a;
+	-o-box-shadow: inset 0 -23px 0 -1px #d92e7a;
+	box-shadow: inset 0 -23px 0 -1px #d92e7a;
+}
+
+a.social.instagram>span.char5 {
+	color: #e64757;
+}
+
+a.social.instagram:hover>span.char5 {
+	color: #ffffff;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #e64757;
+	-moz-box-shadow: inset 0 -23px 0 -1px #e64757;
+	-ms-box-shadow: inset 0 -23px 0 -1px #e64757;
+	-o-box-shadow: inset 0 -23px 0 -1px #e64757;
+	box-shadow: inset 0 -23px 0 -1px #e64757;
+}
+
+a.social.instagram>span.char6 {
+	color: #f15e40;
+}
+
+a.social.instagram:hover>span.char6 {
+	color: #ffffff;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #f15e40;
+	-moz-box-shadow: inset 0 -23px 0 -1px #f15e40;
+	-ms-box-shadow: inset 0 -23px 0 -1px #f15e40;
+	-o-box-shadow: inset 0 -23px 0 -1px #f15e40;
+	box-shadow: inset 0 -23px 0 -1px #f15e40;
+}
+
+a.social.instagram>span.char7 {
+	color: #ea743d;
+}
+
+a.social.instagram:hover>span.char7 {
+	color: #ffffff;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #ea743d;
+	-moz-box-shadow: inset 0 -23px 0 -1px #ea743d;
+	-ms-box-shadow: inset 0 -23px 0 -1px #ea743d;
+	-o-box-shadow: inset 0 -23px 0 -1px #ea743d;
+	box-shadow: inset 0 -23px 0 -1px #ea743d;
+}
+
+a.social.instagram>span.char8 {
+	color: #fdaa46;
+}
+
+a.social.instagram:hover>span.char8 {
+	color: #ffffff;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #fdaa46;
+	-moz-box-shadow: inset 0 -23px 0 -1px #fdaa46;
+	-ms-box-shadow: inset 0 -23px 0 -1px #fdaa46;
+	-o-box-shadow: inset 0 -23px 0 -1px #fdaa46;
+	box-shadow: inset 0 -23px 0 -1px #fdaa46;
+}
+
+a.social.instagram>span.char9 {
+	color: #fec45d;
+}
+
+a.social.instagram:hover>span.char9 {
+	color: #ffffff;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #fec45d;
+	-moz-box-shadow: inset 0 -23px 0 -1px #fec45d;
+	-ms-box-shadow: inset 0 -23px 0 -1px #fec45d;
+	-o-box-shadow: inset 0 -23px 0 -1px #fec45d;
+	box-shadow: inset 0 -23px 0 -1px #fec45d;
+}
+
+a.social.github {
+	color: #201f1f;
+}
+
+a.social.github:hover {
+	color: #ffffff;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #201f1f;
+	-moz-box-shadow: inset 0 -23px 0 -1px #201f1f;
+	-ms-box-shadow: inset 0 -23px 0 -1px #201f1f;
+	-o-box-shadow: inset 0 -23px 0 -1px #201f1f;
+	box-shadow: inset 0 -23px 0 -1px #201f1f;
+}
+
+a.social.linkedin {
+	color: #0077b5;
+}
+
+a.social.linkedin:hover {
+	color: #ffffff;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #0077b5;
+	-moz-box-shadow: inset 0 -23px 0 -1px #0077b5;
+	-ms-box-shadow: inset 0 -23px 0 -1px #0077b5;
+	-o-box-shadow: inset 0 -23px 0 -1px #0077b5;
+	box-shadow: inset 0 -23px 0 -1px #0077b5;
+}
+
 figure.degree {
 	margin: 12pt auto 34pt auto;
 }
