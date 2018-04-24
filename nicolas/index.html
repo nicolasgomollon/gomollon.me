@@ -16,47 +16,72 @@
 	<script defer type="text/javascript" src="assets/scripts/script.js"></script>
 	<script type="application/ld+json">
 		{
-			"@context": "http://schema.org",
-			"@type": "Person",
-			"name": "Nicolas Gomollon",
-			"email": "mailto:nicolas@gomollon.me",
-			"url": "https://nicolas.gomollon.me/",
-			"sameAs": [
-				"https://twitter.com/gomollon",
-				"https://www.facebook.com/nicolas.gomollon",
-				"https://www.instagram.com/gomollon/",
-				"https://www.linkedin.com/in/nicolasgomollon"
-			],
-			"image": {
-				"@type": "ImageObject",
-				"contentUrl": "https://nicolas.gomollon.me/profile.jpg",
-				"encodingFormat": "jpg",
-				"width": {
-					"@type": "QuantitativeValue",
-					"value": "900"
+			"@context":"http://schema.org",
+			"@graph":[
+				{
+					"@type": "Person",
+					"name": "Nicolas Gomollon",
+					"email": "mailto:nicolas@gomollon.me",
+					"url": "https://nicolas.gomollon.me/",
+					"sameAs": [
+						"https://twitter.com/gomollon",
+						"https://www.facebook.com/nicolas.gomollon",
+						"https://www.instagram.com/gomollon/",
+						"https://www.linkedin.com/in/nicolasgomollon"
+					],
+					"image": {
+						"@type": "ImageObject",
+						"contentUrl": "https://nicolas.gomollon.me/profile.jpg",
+						"encodingFormat": "jpg",
+						"width": {
+							"@type": "QuantitativeValue",
+							"value": "900"
+						},
+						"height": {
+							"@type": "QuantitativeValue",
+							"value": "900"
+						},
+						"name": "Nicolas Gomollon",
+						"author": "Nicolas Gomollon",
+						"contentLocation": "Florence, Italy"
+					},
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Porter Ranch, California"
+					},
+					"worksFor": {
+						"@type": "Organization",
+						"name": "Techno-Magic",
+						"url": "https://techno-magic.com/"
+					},
+					"jobTitle": "Founder, iOS & Web Developer",
+					"alumniOf": {
+						"@type": "EducationalOrganization",
+						"name": "UC Irvine"
+					}
 				},
-				"height": {
-					"@type": "QuantitativeValue",
-					"value": "900"
-				},
-				"name": "Nicolas Gomollon",
-				"author": "Nicolas Gomollon",
-				"contentLocation": "Florence, Italy"
-			},
-			"address": {
-				"@type": "PostalAddress",
-				"addressLocality": "Porter Ranch, California"
-			},
-			"worksFor": {
-				"@type": "Organization",
-				"name": "Techno-Magic",
-				"url": "https://techno-magic.com/"
-			},
-			"jobTitle": "Founder, iOS & Web Developer",
-			"alumniOf": {
-				"@type": "EducationalOrganization",
-				"name": "UC Irvine"
-			}
+				{
+					"@type": "WebPage",
+					"url": "https://nicolas.gomollon.me/",
+					"reviewedBy": {
+						"@type": "Person",
+						"name": "Nicolas Gomollon"
+					},
+					"breadcrumb": {
+						"@type": "BreadcrumbList",
+						"itemListElement": [
+							{
+								"@type": "ListItem",
+								"position": 1,
+								"item": {
+									"@id": "https://nicolas.gomollon.me/",
+									"name": "Nicolas Gomollon"
+								}
+							}
+						]
+					}
+				}
+			]
 		}
 	</script>
 </head>
