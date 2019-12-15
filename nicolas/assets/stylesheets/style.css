@@ -777,6 +777,12 @@ img.flag {
 	box-shadow: 0pt 1pt 2pt rgba(0, 0, 0, 0.25);
 }
 
+img.mate-emoji {
+	position: relative; top: 2pt;
+	width: 24px; height: 24px;
+	margin: -4pt -2pt 0 0;
+}
+
 span.skill {
 	white-space: nowrap;
 	padding: 0 0.2em;
