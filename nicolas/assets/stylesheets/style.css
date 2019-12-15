@@ -406,6 +406,19 @@ a.social {
 	box-shadow: none;
 }
 
+a.social.convoz {
+	color: #f4683e;
+}
+
+a.social.convoz:hover {
+	color: #ffffff;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #f4683e;
+	-moz-box-shadow: inset 0 -23px 0 -1px #f4683e;
+	-ms-box-shadow: inset 0 -23px 0 -1px #f4683e;
+	-o-box-shadow: inset 0 -23px 0 -1px #f4683e;
+	box-shadow: inset 0 -23px 0 -1px #f4683e;
+}
+
 a.social.twitter {
 	color: #1da1f2;
 }
