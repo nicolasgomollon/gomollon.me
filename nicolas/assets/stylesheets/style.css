@@ -433,16 +433,24 @@ a.social.twitter:hover {
 }
 
 a.social.facebook {
-	color: #3c5a99;
+	color: #1877F2;
 }
 
 a.social.facebook:hover {
 	color: #ffffff;
-	-webkit-box-shadow: inset 0 -23px 0 -1px #3c5a99;
-	-moz-box-shadow: inset 0 -23px 0 -1px #3c5a99;
-	-ms-box-shadow: inset 0 -23px 0 -1px #3c5a99;
-	-o-box-shadow: inset 0 -23px 0 -1px #3c5a99;
-	box-shadow: inset 0 -23px 0 -1px #3c5a99;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #1877F2;
+	-moz-box-shadow: inset 0 -23px 0 -1px #1877F2;
+	-ms-box-shadow: inset 0 -23px 0 -1px #1877F2;
+	-o-box-shadow: inset 0 -23px 0 -1px #1877F2;
+	box-shadow: inset 0 -23px 0 -1px #1877F2;
+}
+
+a.social.instagram:hover {
+	-webkit-box-shadow: inset 0 -23px 0 -1px #f80376;
+	-moz-box-shadow: inset 0 -23px 0 -1px #f80376;
+	-ms-box-shadow: inset 0 -23px 0 -1px #f80376;
+	-o-box-shadow: inset 0 -23px 0 -1px #f80376;
+	box-shadow: inset 0 -23px 0 -1px #f80376;
 }
 
 a.social.instagram>span {
@@ -454,146 +462,146 @@ a.social.instagram>span {
 }
 
 a.social.instagram>span.char1 {
-	color: #3e6cdd;
+	color: #d300c5;
 }
 
 a.social.instagram:hover>span.char1 {
 	color: #ffffff;
-	-webkit-box-shadow: inset 0 -23px 0 -1px #3e6cdd;
-	-moz-box-shadow: inset 0 -23px 0 -1px #3e6cdd;
-	-ms-box-shadow: inset 0 -23px 0 -1px #3e6cdd;
-	-o-box-shadow: inset 0 -23px 0 -1px #3e6cdd;
-	box-shadow: inset 0 -23px 0 -1px #3e6cdd;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #d300c5;
+	-moz-box-shadow: inset 0 -23px 0 -1px #d300c5;
+	-ms-box-shadow: inset 0 -23px 0 -1px #d300c5;
+	-o-box-shadow: inset 0 -23px 0 -1px #d300c5;
+	box-shadow: inset 0 -23px 0 -1px #d300c5;
 }
 
 a.social.instagram>span.char2 {
-	color: #823acb;
+	color: #de00ae;
 }
 
 a.social.instagram:hover>span.char2 {
 	color: #ffffff;
-	-webkit-box-shadow: inset 0 -23px 0 -1px #823acb;
-	-moz-box-shadow: inset 0 -23px 0 -1px #823acb;
-	-ms-box-shadow: inset 0 -23px 0 -1px #823acb;
-	-o-box-shadow: inset 0 -23px 0 -1px #823acb;
-	box-shadow: inset 0 -23px 0 -1px #823acb;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #de00ae;
+	-moz-box-shadow: inset 0 -23px 0 -1px #de00ae;
+	-ms-box-shadow: inset 0 -23px 0 -1px #de00ae;
+	-o-box-shadow: inset 0 -23px 0 -1px #de00ae;
+	box-shadow: inset 0 -23px 0 -1px #de00ae;
 }
 
 a.social.instagram>span.char3 {
-	color: #b832ac;
+	color: #e80199;
 }
 
 a.social.instagram:hover>span.char3 {
 	color: #ffffff;
-	-webkit-box-shadow: inset 0 -23px 0 -1px #b832ac;
-	-moz-box-shadow: inset 0 -23px 0 -1px #b832ac;
-	-ms-box-shadow: inset 0 -23px 0 -1px #b832ac;
-	-o-box-shadow: inset 0 -23px 0 -1px #b832ac;
-	box-shadow: inset 0 -23px 0 -1px #b832ac;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #e80199;
+	-moz-box-shadow: inset 0 -23px 0 -1px #e80199;
+	-ms-box-shadow: inset 0 -23px 0 -1px #e80199;
+	-o-box-shadow: inset 0 -23px 0 -1px #e80199;
+	box-shadow: inset 0 -23px 0 -1px #e80199;
 }
 
 a.social.instagram>span.char4 {
-	color: #d92e7a;
+	color: #f00389;
 }
 
 a.social.instagram:hover>span.char4 {
 	color: #ffffff;
-	-webkit-box-shadow: inset 0 -23px 0 -1px #d92e7a;
-	-moz-box-shadow: inset 0 -23px 0 -1px #d92e7a;
-	-ms-box-shadow: inset 0 -23px 0 -1px #d92e7a;
-	-o-box-shadow: inset 0 -23px 0 -1px #d92e7a;
-	box-shadow: inset 0 -23px 0 -1px #d92e7a;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #f00389;
+	-moz-box-shadow: inset 0 -23px 0 -1px #f00389;
+	-ms-box-shadow: inset 0 -23px 0 -1px #f00389;
+	-o-box-shadow: inset 0 -23px 0 -1px #f00389;
+	box-shadow: inset 0 -23px 0 -1px #f00389;
 }
 
 a.social.instagram>span.char5 {
-	color: #e64757;
+	color: #f80376;
 }
 
 a.social.instagram:hover>span.char5 {
 	color: #ffffff;
-	-webkit-box-shadow: inset 0 -23px 0 -1px #e64757;
-	-moz-box-shadow: inset 0 -23px 0 -1px #e64757;
-	-ms-box-shadow: inset 0 -23px 0 -1px #e64757;
-	-o-box-shadow: inset 0 -23px 0 -1px #e64757;
-	box-shadow: inset 0 -23px 0 -1px #e64757;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #f80376;
+	-moz-box-shadow: inset 0 -23px 0 -1px #f80376;
+	-ms-box-shadow: inset 0 -23px 0 -1px #f80376;
+	-o-box-shadow: inset 0 -23px 0 -1px #f80376;
+	box-shadow: inset 0 -23px 0 -1px #f80376;
 }
 
 a.social.instagram>span.char6 {
-	color: #f15e40;
+	color: #ff1c61;
 }
 
 a.social.instagram:hover>span.char6 {
 	color: #ffffff;
-	-webkit-box-shadow: inset 0 -23px 0 -1px #f15e40;
-	-moz-box-shadow: inset 0 -23px 0 -1px #f15e40;
-	-ms-box-shadow: inset 0 -23px 0 -1px #f15e40;
-	-o-box-shadow: inset 0 -23px 0 -1px #f15e40;
-	box-shadow: inset 0 -23px 0 -1px #f15e40;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #ff1c61;
+	-moz-box-shadow: inset 0 -23px 0 -1px #ff1c61;
+	-ms-box-shadow: inset 0 -23px 0 -1px #ff1c61;
+	-o-box-shadow: inset 0 -23px 0 -1px #ff1c61;
+	box-shadow: inset 0 -23px 0 -1px #ff1c61;
 }
 
 a.social.instagram>span.char7 {
-	color: #ea743d;
+	color: #ff3a52;
 }
 
 a.social.instagram:hover>span.char7 {
 	color: #ffffff;
-	-webkit-box-shadow: inset 0 -23px 0 -1px #ea743d;
-	-moz-box-shadow: inset 0 -23px 0 -1px #ea743d;
-	-ms-box-shadow: inset 0 -23px 0 -1px #ea743d;
-	-o-box-shadow: inset 0 -23px 0 -1px #ea743d;
-	box-shadow: inset 0 -23px 0 -1px #ea743d;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #ff3a52;
+	-moz-box-shadow: inset 0 -23px 0 -1px #ff3a52;
+	-ms-box-shadow: inset 0 -23px 0 -1px #ff3a52;
+	-o-box-shadow: inset 0 -23px 0 -1px #ff3a52;
+	box-shadow: inset 0 -23px 0 -1px #ff3a52;
 }
 
 a.social.instagram>span.char8 {
-	color: #fdaa46;
+	color: #ff5042;
 }
 
 a.social.instagram:hover>span.char8 {
 	color: #ffffff;
-	-webkit-box-shadow: inset 0 -23px 0 -1px #fdaa46;
-	-moz-box-shadow: inset 0 -23px 0 -1px #fdaa46;
-	-ms-box-shadow: inset 0 -23px 0 -1px #fdaa46;
-	-o-box-shadow: inset 0 -23px 0 -1px #fdaa46;
-	box-shadow: inset 0 -23px 0 -1px #fdaa46;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #ff5042;
+	-moz-box-shadow: inset 0 -23px 0 -1px #ff5042;
+	-ms-box-shadow: inset 0 -23px 0 -1px #ff5042;
+	-o-box-shadow: inset 0 -23px 0 -1px #ff5042;
+	box-shadow: inset 0 -23px 0 -1px #ff5042;
 }
 
 a.social.instagram>span.char9 {
-	color: #fec45d;
+	color: #ff7a00;
 }
 
 a.social.instagram:hover>span.char9 {
 	color: #ffffff;
-	-webkit-box-shadow: inset 0 -23px 0 -1px #fec45d;
-	-moz-box-shadow: inset 0 -23px 0 -1px #fec45d;
-	-ms-box-shadow: inset 0 -23px 0 -1px #fec45d;
-	-o-box-shadow: inset 0 -23px 0 -1px #fec45d;
-	box-shadow: inset 0 -23px 0 -1px #fec45d;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #ff7a00;
+	-moz-box-shadow: inset 0 -23px 0 -1px #ff7a00;
+	-ms-box-shadow: inset 0 -23px 0 -1px #ff7a00;
+	-o-box-shadow: inset 0 -23px 0 -1px #ff7a00;
+	box-shadow: inset 0 -23px 0 -1px #ff7a00;
 }
 
 a.social.github {
-	color: #201f1f;
+	color: #24292e;
 }
 
 a.social.github:hover {
 	color: #ffffff;
-	-webkit-box-shadow: inset 0 -23px 0 -1px #201f1f;
-	-moz-box-shadow: inset 0 -23px 0 -1px #201f1f;
-	-ms-box-shadow: inset 0 -23px 0 -1px #201f1f;
-	-o-box-shadow: inset 0 -23px 0 -1px #201f1f;
-	box-shadow: inset 0 -23px 0 -1px #201f1f;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #24292e;
+	-moz-box-shadow: inset 0 -23px 0 -1px #24292e;
+	-ms-box-shadow: inset 0 -23px 0 -1px #24292e;
+	-o-box-shadow: inset 0 -23px 0 -1px #24292e;
+	box-shadow: inset 0 -23px 0 -1px #24292e;
 }
 
 a.social.linkedin {
-	color: #0077b5;
+	color: #0a66c2;
 }
 
 a.social.linkedin:hover {
 	color: #ffffff;
-	-webkit-box-shadow: inset 0 -23px 0 -1px #0077b5;
-	-moz-box-shadow: inset 0 -23px 0 -1px #0077b5;
-	-ms-box-shadow: inset 0 -23px 0 -1px #0077b5;
-	-o-box-shadow: inset 0 -23px 0 -1px #0077b5;
-	box-shadow: inset 0 -23px 0 -1px #0077b5;
+	-webkit-box-shadow: inset 0 -23px 0 -1px #0a66c2;
+	-moz-box-shadow: inset 0 -23px 0 -1px #0a66c2;
+	-ms-box-shadow: inset 0 -23px 0 -1px #0a66c2;
+	-o-box-shadow: inset 0 -23px 0 -1px #0a66c2;
+	box-shadow: inset 0 -23px 0 -1px #0a66c2;
 }
 
 figure.degree {
