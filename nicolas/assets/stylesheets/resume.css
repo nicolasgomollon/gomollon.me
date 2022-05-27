@@ -124,6 +124,15 @@ body {
 	line-height: 1.5em;
 }
 
+@media (prefers-color-scheme: dark) {
+	
+	body {
+		background: #101010;
+		color: #ffffff;
+	}
+	
+}
+
 @media print {
 	
 	@page {
@@ -319,7 +328,17 @@ time {
 }
 
 .email {
+	position: relative;
 	padding-left: 22px;
+}
+
+.email::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background-image: url(../vectors/Send.svg);
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -327,7 +346,17 @@ time {
 }
 
 .phone {
+	position: relative;
 	padding-left: 22px;
+}
+
+.phone::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background-image: url(../vectors/PhoneCall.svg);
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -335,7 +364,17 @@ time {
 }
 
 .website {
+	position: relative;
 	padding-left: 23px;
+}
+
+.website::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background-image: url(../vectors/Globe.svg);
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -343,7 +382,17 @@ time {
 }
 
 .university {
+	position: relative;
 	padding-left: 19px;
+}
+
+.university::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background-image: url(../vectors/Library.svg);
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -351,7 +400,17 @@ time {
 }
 
 .company {
+	position: relative;
 	padding-left: 20px;
+}
+
+.company::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background-image: url(../vectors/City.svg);
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -359,7 +418,17 @@ time {
 }
 
 .location {
+	position: relative;
 	padding-left: 18px;
+}
+
+.location::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background-image: url(../vectors/MapPinAlternate.svg);
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -367,8 +436,18 @@ time {
 }
 
 .programming-languages :first-child {
+	position: relative;
 	margin-left: -32px;
 	padding-left: 32px;
+}
+
+.programming-languages :first-child::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background-image: url(../vectors/Keyboard.svg);
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -376,8 +455,18 @@ time {
 }
 
 .software :first-child {
+	position: relative;
 	margin-left: -27px;
 	padding-left: 27px;
+}
+
+.software :first-child::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background-image: url(../vectors/Window.svg);
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -385,8 +474,18 @@ time {
 }
 
 .operating-systems :first-child {
+	position: relative;
 	margin-left: -26px;
 	padding-left: 26px;
+}
+
+.operating-systems :first-child::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background-image: url(../vectors/Computer.svg);
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -394,12 +493,39 @@ time {
 }
 
 .languages :first-child {
+	position: relative;
 	margin-left: -26px;
 	padding-left: 26px;
+}
+
+.languages :first-child::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	background-image: url(../vectors/Subtitles.svg);
 	background-position: left center;
 	background-repeat: no-repeat;
 	background-size: 21px 21px;
+}
+
+@media (prefers-color-scheme: dark) {
+	
+	.email::before,
+	.phone::before,
+	.website::before,
+	.university::before,
+	.company::before,
+	.location::before,
+	.programming-languages :first-child::before,
+	.software :first-child::before,
+	.operating-systems :first-child::before,
+	.languages :first-child::before {
+		filter: invert(100%);
+	}
+	
 }
 
 .hidden, .none {

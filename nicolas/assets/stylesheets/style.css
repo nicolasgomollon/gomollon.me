@@ -55,6 +55,15 @@ body {
 	line-height: 1.5;
 }
 
+@media (prefers-color-scheme: dark) {
+	
+	body {
+		background: #101010;
+		color: #ffffff;
+	}
+	
+}
+
 h1, h2, h3 {
 	line-height: 1.2;
 }
@@ -81,6 +90,27 @@ a:hover {
 	-ms-box-shadow: inset 0 -23px 0 -1px #80bdff;
 	-o-box-shadow: inset 0 -23px 0 -1px #80bdff;
 	box-shadow: inset 0 -23px 0 -1px #80bdff;
+}
+
+@media (prefers-color-scheme: dark) {
+	
+	a {
+		color: #ffffff;
+		-webkit-box-shadow: inset 0 -3px 0 -1px #007aff;
+		-moz-box-shadow: inset 0 -3px 0 -1px #007aff;
+		-ms-box-shadow: inset 0 -3px 0 -1px #007aff;
+		-o-box-shadow: inset 0 -3px 0 -1px #007aff;
+		box-shadow: inset 0 -3px 0 -1px #007aff;
+	}
+	
+	a:hover {
+		-webkit-box-shadow: inset 0 -23px 0 -1px #007aff;
+		-moz-box-shadow: inset 0 -23px 0 -1px #007aff;
+		-ms-box-shadow: inset 0 -23px 0 -1px #007aff;
+		-o-box-shadow: inset 0 -23px 0 -1px #007aff;
+		box-shadow: inset 0 -23px 0 -1px #007aff;
+	}
+	
 }
 
 mark {
@@ -111,6 +141,26 @@ nav, footer {
 		-ms-backdrop-filter: saturate(180%) blur(15pt);
 		-o-backdrop-filter: saturate(180%) blur(15pt);
 		backdrop-filter: saturate(180%) blur(15pt);
+	}
+	
+}
+
+@media (prefers-color-scheme: dark) {
+	
+	nav, footer {
+		background-color: rgba(16, 16, 16, 0.95);
+	}
+	
+	@supports (backdrop-filter: blur(15pt)) or
+	(-webkit-backdrop-filter: blur(15pt)) or
+	(-moz-backdrop-filter: blur(15pt)) or
+	(-ms-backdrop-filter: blur(15pt)) or
+	(-o-backdrop-filter: blur(15pt)) {
+		
+		nav, footer {
+			background-color: rgba(16, 16, 16, 0.8);
+		}
+		
 	}
 	
 }
@@ -171,6 +221,18 @@ nav>ul>li>a:hover {
 
 nav>ul>li>a.active {
 	border-bottom: 2pt solid #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+	
+	nav>ul>li>a:hover {
+		border-bottom: 2pt solid #bbb9bb;
+	}
+	
+	nav>ul>li>a.active {
+		border-bottom: 2pt solid #ffffff;
+	}
+	
 }
 
 section {
@@ -339,6 +401,14 @@ footer>ul>li>a:hover img {
 	transform: scale(1.2);
 }
 
+@media (prefers-color-scheme: dark) {
+	
+	footer>ul>li>a img {
+		filter: invert(100%);
+	}
+	
+}
+
 /**
  * Aspect Ratio Image Placeholder
  *
@@ -381,6 +451,14 @@ figure.inline>img {
 figure.inline>figcaption {
 	font-weight: bold;
 	color: #444444;
+}
+
+@media (prefers-color-scheme: dark) {
+	
+	figure.inline>figcaption {
+		color: #dcdcdc;
+	}
+	
 }
 
 /**
@@ -591,6 +669,22 @@ a.social.github:hover {
 	box-shadow: inset 0 -23px 0 -1px #24292e;
 }
 
+@media (prefers-color-scheme: dark) {
+	
+	a.social.github {
+		color: #57606a;
+	}
+	
+	a.social.github:hover {
+		-webkit-box-shadow: inset 0 -23px 0 -1px #57606a;
+		-moz-box-shadow: inset 0 -23px 0 -1px #57606a;
+		-ms-box-shadow: inset 0 -23px 0 -1px #57606a;
+		-o-box-shadow: inset 0 -23px 0 -1px #57606a;
+		box-shadow: inset 0 -23px 0 -1px #57606a;
+	}
+	
+}
+
 a.social.linkedin {
 	color: #0a66c2;
 }
@@ -602,6 +696,22 @@ a.social.linkedin:hover {
 	-ms-box-shadow: inset 0 -23px 0 -1px #0a66c2;
 	-o-box-shadow: inset 0 -23px 0 -1px #0a66c2;
 	box-shadow: inset 0 -23px 0 -1px #0a66c2;
+}
+
+@media (prefers-color-scheme: dark) {
+	
+	a.social.linkedin {
+		color: #2977c9;
+	}
+	
+	a.social.linkedin:hover {
+		-webkit-box-shadow: inset 0 -23px 0 -1px #2977c9;
+		-moz-box-shadow: inset 0 -23px 0 -1px #2977c9;
+		-ms-box-shadow: inset 0 -23px 0 -1px #2977c9;
+		-o-box-shadow: inset 0 -23px 0 -1px #2977c9;
+		box-shadow: inset 0 -23px 0 -1px #2977c9;
+	}
+	
 }
 
 figure.degree {
@@ -656,6 +766,14 @@ div.app>p, div.container>div.browser>p {
 	font-size: 15pt;
 	font-weight: 500;
 	text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+	
+	div.app>p, div.container>div.browser>p {
+		color: #dcdcdc;
+	}
+	
 }
 
 div.app>div.icon {
@@ -715,6 +833,14 @@ div.browser>.window {
 	-ms-box-shadow: 0pt 1pt 4pt rgba(0, 0, 0, 0.25);
 	-o-box-shadow: 0pt 1pt 4pt rgba(0, 0, 0, 0.25);
 	box-shadow: 0pt 1pt 4pt rgba(0, 0, 0, 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+	
+	div.browser>.window {
+		border: 1pt solid #595959;
+	}
+	
 }
 
 div.browser>.window>div.location {
@@ -803,6 +929,15 @@ span.skill {
 	border-radius: 3pt;
 }
 
+@media (prefers-color-scheme: dark) {
+	
+	span.skill {
+		background-color: #222222;
+		border: 1pt solid #3a3a3a;
+	}
+	
+}
+
 div.hero-skills {
 	margin: 1em auto;
 	font-size: 15pt;
@@ -834,6 +969,14 @@ article.repos>div.repo {
 	-ms-border-radius: 3pt;
 	-o-border-radius: 3pt;
 	border-radius: 3pt;
+}
+
+@media (prefers-color-scheme: dark) {
+	
+	article.repos>div.repo {
+		border: 1pt solid #2f3133;
+	}
+	
 }
 
 article.repos>div.repo>h4 {
@@ -916,6 +1059,14 @@ article.websites>div.browser>.window+* {
 article.websites>div.browser>.window~* {
 	color: #444444;
 	text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+	
+	article.websites>div.browser>.window~* {
+		color: #dcdcdc;
+	}
+	
 }
 
 @media (max-width: 500pt) {
