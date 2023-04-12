@@ -1204,9 +1204,24 @@ article.app>div.app-description>p:first-of-type {
 }
 
 time {
-	display: inline-block;
-	float: right;
+	display: block;
 	font-style: normal;
+}
+
+@media (max-width: 400pt) {
+	
+	time {
+		font-weight: 600;
+	}
+	
+}
+
+@media (min-width: 400pt) {
+	
+	time {
+		float: right;
+	}
+	
 }
 
 img.app-icon {
