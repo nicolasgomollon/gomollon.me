@@ -72,28 +72,3 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
 		}
 	}
 });
-
-
-/**
- * Prevent Sticky Hover Effects on Touch Devices
- *
- * Sjoerd Visscher
- * http://testbug.handcraft.com/ipad.html
- *
- * Darren Cook
- * https://stackoverflow.com/a/17234319/2469565
-**/
-
-$('a[href]').on('touchend', function() {
-	$(this).click(function() {
-		var element = this;
-		if (element == null) { return; }
-		var parent = element.parentNode;
-		var next = element.nextSibling;
-		if (parent == null) { return; }
-		parent.removeChild(element);
-		setTimeout(function() {
-			parent.insertBefore(element, next);
-		}, 0);
-	});
-});
