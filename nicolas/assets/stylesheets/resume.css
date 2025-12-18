@@ -156,14 +156,6 @@ body {
 	
 }
 
-@media only screen and (max-width: 590px) {
-	
-	header ul li {
-		display: block !important;
-	}
-	
-}
-
 @media only screen and (max-width: 550px) {
 	
 	article {
@@ -214,7 +206,7 @@ header ul {
 }
 
 header ul li {
-	display: inline-block;
+	display: block;
 }
 
 header ul li:before {
@@ -222,7 +214,7 @@ header ul li:before {
 	padding: 0;
 }
 
-header ul li:not(:last-of-type) {
+header ul li {
 	margin-right: 10pt;
 }
 
@@ -381,6 +373,75 @@ time {
 	background-size: 21px 21px;
 }
 
+.social {
+	position: relative;
+	margin-left: 2.5px;
+	padding-left: 44px;
+}
+
+.social::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../vectors/githubr.svg);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+}
+
+.social::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 22px;
+	width: 100%;
+	height: 100%;
+	background-image: url(../vectors/linkedinr.svg);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+}
+
+.citizenship {
+	position: relative;
+	padding-left: 24px;
+}
+
+.citizenship::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../vectors/Passport.svg);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 21px 21px;
+}
+
+.residence {
+	position: relative;
+	padding-left: 24px;
+}
+
+.residence::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../vectors/Home.svg);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 21px 21px;
+}
+
 .university {
 	position: relative;
 	padding-left: 19px;
@@ -454,6 +515,25 @@ time {
 	background-size: 31px 19px;
 }
 
+.frameworks :first-child {
+	position: relative;
+	margin-left: -27px;
+	padding-left: 27px;
+}
+
+.frameworks :first-child::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../vectors/Hammer.svg);
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 19px 19px;
+}
+
 .software :first-child {
 	position: relative;
 	margin-left: -27px;
@@ -516,10 +596,15 @@ time {
 	.email::before,
 	.phone::before,
 	.website::before,
+	.social::before,
+	.social::after,
+	.citizenship::before,
+	.residence::before,
 	.university::before,
 	.company::before,
 	.location::before,
 	.programming-languages :first-child::before,
+	.frameworks :first-child::before,
 	.software :first-child::before,
 	.operating-systems :first-child::before,
 	.languages :first-child::before {
