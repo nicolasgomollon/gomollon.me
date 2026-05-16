@@ -137,11 +137,11 @@ body {
 	
 	@page {
 		size: letter;
-		margin: 0;
+		margin: 0.5in 0.75in;
 	}
 	
 	body {
-		margin: 0.5in 0.75in;
+		margin: 0;
 	}
 	
 }
